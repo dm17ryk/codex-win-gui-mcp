@@ -1,0 +1,992 @@
+[
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "winreg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "winreg",
+        "description": "winreg",
+        "detail": "winreg",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "contextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pyautogui",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyautogui",
+        "description": "pyautogui",
+        "detail": "pyautogui",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "DesktopHarness",
+        "importPath": "win_gui_core",
+        "description": "win_gui_core",
+        "isExtraImport": true,
+        "detail": "win_gui_core",
+        "documentation": {}
+    },
+    {
+        "label": "DesktopHarness",
+        "importPath": "win_gui_core",
+        "description": "win_gui_core",
+        "isExtraImport": true,
+        "detail": "win_gui_core",
+        "documentation": {}
+    },
+    {
+        "label": "FastMCP",
+        "importPath": "fastmcp",
+        "description": "fastmcp",
+        "isExtraImport": true,
+        "detail": "fastmcp",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "mss",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mss",
+        "description": "mss",
+        "detail": "mss",
+        "documentation": {}
+    },
+    {
+        "label": "psutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psutil",
+        "description": "psutil",
+        "detail": "psutil",
+        "documentation": {}
+    },
+    {
+        "label": "win32con",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "win32con",
+        "description": "win32con",
+        "detail": "win32con",
+        "documentation": {}
+    },
+    {
+        "label": "win32gui",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "win32gui",
+        "description": "win32gui",
+        "detail": "win32gui",
+        "documentation": {}
+    },
+    {
+        "label": "win32process",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "win32process",
+        "description": "win32process",
+        "detail": "win32process",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Desktop",
+        "importPath": "pywinauto",
+        "description": "pywinauto",
+        "isExtraImport": true,
+        "detail": "pywinauto",
+        "documentation": {}
+    },
+    {
+        "label": "ElementNotFoundError",
+        "importPath": "pywinauto.findwindows",
+        "description": "pywinauto.findwindows",
+        "isExtraImport": true,
+        "detail": "pywinauto.findwindows",
+        "documentation": {}
+    },
+    {
+        "label": "WindowNotFoundError",
+        "importPath": "pywinauto.findwindows",
+        "description": "pywinauto.findwindows",
+        "isExtraImport": true,
+        "detail": "pywinauto.findwindows",
+        "documentation": {}
+    },
+    {
+        "label": "Tee",
+        "kind": 6,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "class Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except OSError:\n                pass\n        tee_f.write(what)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_root_hkey",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU\n        return winreg.HKEY_CURRENT_USER",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "create_shortcut",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def create_shortcut(\n    path, description, filename, arguments=\"\", workdir=\"\", iconpath=\"\", iconindex=0\n):\n    import pythoncom\n    from win32com.shell import shell\n    ilink = pythoncom.CoCreateInstance(\n        shell.CLSID_ShellLink,\n        None,\n        pythoncom.CLSCTX_INPROC_SERVER,\n        shell.IID_IShellLink,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_special_folder_path",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_special_folder_path(path_name):\n    from win32com.shell import shell, shellcon\n    for maybe in \"\"\"\n        CSIDL_COMMON_STARTMENU CSIDL_STARTMENU CSIDL_COMMON_APPDATA\n        CSIDL_LOCAL_APPDATA CSIDL_APPDATA CSIDL_COMMON_DESKTOPDIRECTORY\n        CSIDL_DESKTOPDIRECTORY CSIDL_COMMON_STARTUP CSIDL_STARTUP\n        CSIDL_COMMON_PROGRAMS CSIDL_PROGRAMS CSIDL_PROGRAM_FILES_COMMON\n        CSIDL_PROGRAM_FILES CSIDL_FONTS\"\"\".split():\n        if maybe == path_name:\n            csidl = getattr(shellcon, maybe)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "CopyTo",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def CopyTo(desc, src, dest):\n    import win32api\n    import win32con\n    while 1:\n        try:\n            win32api.CopyFile(src, dest, 0)\n            return\n        except win32api.error as details:\n            if details.winerror == 5:  # access denied - user not admin.\n                raise",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "LoadSystemModule",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def LoadSystemModule(lib_dir, modname):\n    # See if this is a debug build.\n    import importlib.machinery\n    import importlib.util\n    suffix = \"_d\" if \"_d.pyd\" in importlib.machinery.EXTENSION_SUFFIXES else \"\"\n    filename = \"%s%d%d%s.dll\" % (\n        modname,\n        sys.version_info.major,\n        sys.version_info.minor,\n        suffix,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "SetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def SetPyKeyVal(key_name, value_name, value):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.CreateKey(root_key, key_name)\n        try:\n            winreg.SetValueEx(my_key, value_name, 0, winreg.REG_SZ, value)\n            if verbose:\n                print(f\"-> {root_key_name}\\\\{key_name}[{value_name}]={value!r}\")\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "UnsetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def UnsetPyKeyVal(key_name, value_name, delete_key=False):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.OpenKey(root_key, key_name, 0, winreg.KEY_SET_VALUE)\n        try:\n            winreg.DeleteValue(my_key, value_name)\n            if verbose:\n                print(f\"-> DELETE {root_key_name}\\\\{key_name}[{value_name}]\")\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterCOMObjects",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterCOMObjects(register=True):\n    import win32com.server.register\n    if register:\n        func = win32com.server.register.RegisterClasses\n    else:\n        func = win32com.server.register.UnregisterClasses\n    flags = {}\n    if not verbose:\n        flags[\"quiet\"] = 1\n    for module, klass_name in com_modules:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterHelpFile",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterHelpFile(register=True, lib_dir=None):\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    if register:\n        # Register the .chm help file.\n        chm_file = os.path.join(lib_dir, \"PyWin32.chm\")\n        if os.path.isfile(chm_file):\n            # This isn't recursive, so if 'Help' doesn't exist, we croak\n            SetPyKeyVal(\"Help\", None, None)\n            SetPyKeyVal(\"Help\\\\Pythonwin Reference\", None, chm_file)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterPythonwin",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterPythonwin(register=True, lib_dir=None):\n    \"\"\"Add (or remove) Pythonwin to context menu for python scripts.\n    ??? Should probably also add Edit command for pys files also.\n    Also need to remove these keys on uninstall, but there's no function\n    to add registry entries to uninstall log ???\n    \"\"\"\n    import os\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    classes_root = get_root_hkey()",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_shortcuts_folder",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_shortcuts_folder():\n    if get_root_hkey() == winreg.HKEY_LOCAL_MACHINE:\n        try:\n            fldr = get_special_folder_path(\"CSIDL_COMMON_PROGRAMS\")\n        except OSError:\n            # No CSIDL_COMMON_PROGRAMS on this platform\n            fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")\n    else:\n        # non-admin install - always goes in this user's start menu.\n        fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_system_dir",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_system_dir():\n    import win32api  # we assume this exists.\n    try:\n        import pythoncom\n        import win32process\n        from win32com.shell import shell, shellcon\n        try:\n            if win32process.IsWow64Process():\n                return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEMX86)\n            return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEM)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "fixup_dbi",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def fixup_dbi():\n    # We used to have a dbi.pyd with our .pyd files, but now have a .py file.\n    # If the user didn't uninstall, they will find the .pyd which will cause\n    # problems - so handle that.\n    import win32api\n    import win32con\n    pyd_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi.pyd\")\n    pyd_d_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi_d.pyd\")\n    py_name = os.path.join(os.path.dirname(win32con.__file__), \"dbi.py\")\n    for this_pyd in (pyd_name, pyd_d_name):",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def install(lib_dir):\n    import traceback\n    # The .pth file is now installed as a regular file.\n    # Create the .pth file in the site-packages dir, and use only relative paths\n    # We used to write a .pth directly to sys.prefix - clobber it.\n    if os.path.isfile(os.path.join(sys.prefix, \"pywin32.pth\")):\n        os.unlink(os.path.join(sys.prefix, \"pywin32.pth\"))\n    # The .pth may be new and therefore not loaded in this session.\n    # Setup the paths just in case.\n    for name in \"win32 win32\\\\lib Pythonwin\".split():",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def uninstall(lib_dir):\n    # First ensure our system modules are loaded from pywin32_system, so\n    # we can remove the ones we copied...\n    LoadSystemModule(lib_dir, \"pywintypes\")\n    LoadSystemModule(lib_dir, \"pythoncom\")\n    try:\n        RegisterCOMObjects(False)\n    except Exception as why:\n        print(f\"Failed to unregister COM objects: {why}\")\n    try:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verify_destination",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def verify_destination(location: str) -> str:\n    location = os.path.abspath(location)\n    if not os.path.isdir(location):\n        raise argparse.ArgumentTypeError(\n            f'Path \"{location}\" is not an existing directory!'\n        )\n    return location\ndef main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python -m pywin32_postinstall -install\n    * or (shorter but you don't have control over which python environment is used)\n    > pywin32_postinstall -install\n    You need to execute this script, with a '-install' parameter,\n    to ensure the environment is setup correctly to install COM objects, services, etc.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "tee_f",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "tee_f = open(\n    os.path.join(\n        tempfile.gettempdir(),  # Send output somewhere so it can be found if necessary...\n        \"pywin32_postinstall.log\",\n    ),\n    \"w\",\n)\nclass Tee:\n    def __init__(self, file):\n        self.f = file",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stderr",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stderr = Tee(sys.stderr)\nsys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stdout",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "com_modules",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "com_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0\n# Verbosity of output messages.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "silent",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "silent = 0\n# Verbosity of output messages.\nverbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "verbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "root_key_name",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "root_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "run_test",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()\n    result = subprocess.run(cmd, check=False, cwd=dirname)\n    print(f\"*** Test script '{script}' exited with {result.returncode}\")\n    sys.stdout.flush()\n    if result.returncode:",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "find_and_run",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def find_and_run(possible_locations, extras):\n    for maybe in possible_locations:\n        if os.path.isfile(maybe):\n            run_test(maybe, extras)\n            break\n    else:\n        raise RuntimeError(\n            \"Failed to locate a test script in one of %s\" % possible_locations\n        )\ndef main():",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def main():\n    import argparse\n    code_directories = [project_root] + site_packages\n    parser = argparse.ArgumentParser(\n        description=\"A script to trigger tests in all subprojects of PyWin32.\"\n    )\n    parser.add_argument(\n        \"-no-user-interaction\",\n        default=False,\n        action=\"store_true\",",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))\nsite_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "site_packages",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "site_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "failures",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def field(obj: Any, name: str, default: Any = None) -> Any:\n    if isinstance(obj, dict):\n        return obj.get(name, default)\n    return getattr(obj, name, default)\n@contextmanager\ndef with_modifiers(keys: Iterable[str] | None):\n    normalized = [normalize_key(k) for k in (keys or [])]\n    for key in normalized:\n        pyautogui.keyDown(key)\n    try:",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "with_modifiers",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def with_modifiers(keys: Iterable[str] | None):\n    normalized = [normalize_key(k) for k in (keys or [])]\n    for key in normalized:\n        pyautogui.keyDown(key)\n    try:\n        yield\n    finally:\n        for key in reversed(normalized):\n            pyautogui.keyUp(key)\ndef normalize_key(key: str) -> str:",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_key",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def normalize_key(key: str) -> str:\n    upper = key.strip().upper()\n    return KEY_ALIASES.get(upper, key.strip().lower())\ndef normalize_drag_path(path: Any) -> list[tuple[int, int]]:\n    points: list[tuple[int, int]] = []\n    for item in path:\n        if isinstance(item, dict):\n            points.append((int(item[\"x\"]), int(item[\"y\"])))\n        elif hasattr(item, \"x\") and hasattr(item, \"y\"):\n            points.append((int(item.x), int(item.y)))",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_drag_path",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def normalize_drag_path(path: Any) -> list[tuple[int, int]]:\n    points: list[tuple[int, int]] = []\n    for item in path:\n        if isinstance(item, dict):\n            points.append((int(item[\"x\"]), int(item[\"y\"])))\n        elif hasattr(item, \"x\") and hasattr(item, \"y\"):\n            points.append((int(item.x), int(item.y)))\n        else:\n            x, y = item\n            points.append((int(x), int(y)))",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "execute_actions",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def execute_actions(actions: Iterable[Any]) -> None:\n    for action in actions:\n        action_type = field(action, \"type\")\n        if action_type in {\"wait\", \"screenshot\"}:\n            if action_type == \"wait\":\n                time.sleep(2)\n            continue\n        if action_type == \"keypress\":\n            for key in field(action, \"keys\", []):\n                pyautogui.press(normalize_key(key))",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "send_first_request",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def send_first_request(goal: str):\n    return client.responses.create(\n        model=os.environ.get(\"OPENAI_COMPUTER_MODEL\", \"gpt-5.4\"),\n        tools=[{\"type\": \"computer\"}],\n        input=goal,\n    )\ndef send_screenshot(response: Any, call_id: str, screenshot_base64: str):\n    return client.responses.create(\n        model=os.environ.get(\"OPENAI_COMPUTER_MODEL\", \"gpt-5.4\"),\n        tools=[{\"type\": \"computer\"}],",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "send_screenshot",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def send_screenshot(response: Any, call_id: str, screenshot_base64: str):\n    return client.responses.create(\n        model=os.environ.get(\"OPENAI_COMPUTER_MODEL\", \"gpt-5.4\"),\n        tools=[{\"type\": \"computer\"}],\n        previous_response_id=response.id,\n        input=[\n            {\n                \"type\": \"computer_call_output\",\n                \"call_id\": call_id,\n                \"output\": {",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "find_computer_call",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def find_computer_call(response: Any):\n    for item in response.output:\n        if field(item, \"type\") == \"computer_call\":\n            return item\n    return None\ndef computer_use_loop(goal: str, window_title: str | None, full_screen: bool) -> Any:\n    response = send_first_request(goal)\n    while True:\n        computer_call = find_computer_call(response)\n        if computer_call is None:",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "computer_use_loop",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def computer_use_loop(goal: str, window_title: str | None, full_screen: bool) -> Any:\n    response = send_first_request(goal)\n    while True:\n        computer_call = find_computer_call(response)\n        if computer_call is None:\n            return response\n        execute_actions(field(computer_call, \"actions\", []))\n        screenshot = harness.capture_screenshot(\n            full_screen=full_screen,\n            title_regex=window_title,",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "def main() -> int:\n    parser = argparse.ArgumentParser(description=\"Run an OpenAI Computer Use loop against a Windows desktop target.\")\n    parser.add_argument(\"goal\", help=\"Natural-language task for the model.\")\n    parser.add_argument(\"--window-title\", default=os.environ.get(\"MAIN_WINDOW_TITLE_REGEX\"), help=\"Regex of the target window title.\")\n    parser.add_argument(\"--full-screen\", action=\"store_true\", help=\"Capture the whole screen instead of a single window.\")\n    args = parser.parse_args()\n    final_response = computer_use_loop(args.goal, args.window_title, args.full_screen)\n    output_text = getattr(final_response, \"output_text\", None)\n    if output_text:\n        print(output_text)",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "client = OpenAI()\nharness = DesktopHarness()\npyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "harness",
+        "kind": 5,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "harness = DesktopHarness()\npyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "pyautogui.FAILSAFE",
+        "kind": 5,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "pyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "pyautogui.PAUSE",
+        "kind": 5,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "pyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",\n    \"ENTER\": \"enter\",",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "KEY_ALIASES",
+        "kind": 5,
+        "importPath": "openai_loop",
+        "description": "openai_loop",
+        "peekOfCode": "KEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",\n    \"ENTER\": \"enter\",\n    \"RETURN\": \"enter\",",
+        "detail": "openai_loop",
+        "documentation": {}
+    },
+    {
+        "label": "ping",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def ping() -> dict:\n    return {\"ok\": True, \"message\": \"win-gui MCP is alive\"}\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None) -> dict:\n    \"\"\"Close the configured app (or a specific pid).\"\"\"\n    return harness.close_app(pid=pid)",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "launch_app",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None) -> dict:\n    \"\"\"Close the configured app (or a specific pid).\"\"\"\n    return harness.close_app(pid=pid)\n@mcp.tool\ndef restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured app.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "close_app",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def close_app(pid: int | None = None) -> dict:\n    \"\"\"Close the configured app (or a specific pid).\"\"\"\n    return harness.close_app(pid=pid)\n@mcp.tool\ndef restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured app.\"\"\"\n    return harness.restart_app(args=args)\n@mcp.tool\ndef list_windows() -> list[dict]:\n    \"\"\"List top-level windows visible to the current desktop session.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "restart_app",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured app.\"\"\"\n    return harness.restart_app(args=args)\n@mcp.tool\ndef list_windows() -> list[dict]:\n    \"\"\"List top-level windows visible to the current desktop session.\"\"\"\n    return harness.list_windows()\n@mcp.tool\ndef wait_main_window(title_regex: str | None = None, timeout_sec: float = 20.0, pid: int | None = None) -> dict:\n    \"\"\"Wait until a visible top-level window matches the regex.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "list_windows",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def list_windows() -> list[dict]:\n    \"\"\"List top-level windows visible to the current desktop session.\"\"\"\n    return harness.list_windows()\n@mcp.tool\ndef wait_main_window(title_regex: str | None = None, timeout_sec: float = 20.0, pid: int | None = None) -> dict:\n    \"\"\"Wait until a visible top-level window matches the regex.\"\"\"\n    return harness.wait_main_window(title_regex=title_regex, timeout_sec=timeout_sec, pid=pid)\n@mcp.tool\ndef focus_window(hwnd: int) -> dict:\n    \"\"\"Bring a window to foreground.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "wait_main_window",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def wait_main_window(title_regex: str | None = None, timeout_sec: float = 20.0, pid: int | None = None) -> dict:\n    \"\"\"Wait until a visible top-level window matches the regex.\"\"\"\n    return harness.wait_main_window(title_regex=title_regex, timeout_sec=timeout_sec, pid=pid)\n@mcp.tool\ndef focus_window(hwnd: int) -> dict:\n    \"\"\"Bring a window to foreground.\"\"\"\n    return harness.focus_window(hwnd=hwnd)\n@mcp.tool\ndef move_window(hwnd: int, x: int, y: int, width: int, height: int) -> dict:\n    \"\"\"Move/resize a window using Win32, not by dragging the title bar.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "focus_window",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def focus_window(hwnd: int) -> dict:\n    \"\"\"Bring a window to foreground.\"\"\"\n    return harness.focus_window(hwnd=hwnd)\n@mcp.tool\ndef move_window(hwnd: int, x: int, y: int, width: int, height: int) -> dict:\n    \"\"\"Move/resize a window using Win32, not by dragging the title bar.\"\"\"\n    return harness.move_window(hwnd=hwnd, x=x, y=y, width=width, height=height)\n@mcp.tool\ndef capture_screenshot(\n    full_screen: bool = False,",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "move_window",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def move_window(hwnd: int, x: int, y: int, width: int, height: int) -> dict:\n    \"\"\"Move/resize a window using Win32, not by dragging the title bar.\"\"\"\n    return harness.move_window(hwnd=hwnd, x=x, y=y, width=width, height=height)\n@mcp.tool\ndef capture_screenshot(\n    full_screen: bool = False,\n    hwnd: int | None = None,\n    title_regex: str | None = None,\n    embed_base64: bool = False,\n) -> dict:",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "capture_screenshot",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def capture_screenshot(\n    full_screen: bool = False,\n    hwnd: int | None = None,\n    title_regex: str | None = None,\n    embed_base64: bool = False,\n) -> dict:\n    \"\"\"Capture the full screen or a single window. Set embed_base64=true when the model needs pixels inline.\"\"\"\n    return harness.capture_screenshot(\n        full_screen=full_screen,\n        hwnd=hwnd,",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "click_xy",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def click_xy(x: int, y: int, button: str = \"left\", absolute: bool = True, hwnd: int | None = None) -> dict:\n    \"\"\"Click at absolute screen coordinates or window-relative coordinates.\"\"\"\n    return harness.click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)\n@mcp.tool\ndef double_click_xy(x: int, y: int, button: str = \"left\", absolute: bool = True, hwnd: int | None = None) -> dict:\n    \"\"\"Double-click at absolute screen coordinates or window-relative coordinates.\"\"\"\n    return harness.double_click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)\n@mcp.tool\ndef drag_mouse(\n    x1: int,",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "double_click_xy",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def double_click_xy(x: int, y: int, button: str = \"left\", absolute: bool = True, hwnd: int | None = None) -> dict:\n    \"\"\"Double-click at absolute screen coordinates or window-relative coordinates.\"\"\"\n    return harness.double_click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)\n@mcp.tool\ndef drag_mouse(\n    x1: int,\n    y1: int,\n    x2: int,\n    y2: int,\n    absolute: bool = True,",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "drag_mouse",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def drag_mouse(\n    x1: int,\n    y1: int,\n    x2: int,\n    y2: int,\n    absolute: bool = True,\n    hwnd: int | None = None,\n    duration: float = 0.25,\n    button: str = \"left\",\n) -> dict:",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "move_mouse",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def move_mouse(x: int, y: int) -> dict:\n    \"\"\"Move the mouse cursor to absolute screen coordinates.\"\"\"\n    return harness.move_mouse(x=x, y=y)\n@mcp.tool\ndef scroll(clicks: int, x: int | None = None, y: int | None = None) -> dict:\n    \"\"\"Scroll the wheel; positive is up, negative is down.\"\"\"\n    return harness.scroll(clicks=clicks, x=x, y=y)\n@mcp.tool\ndef type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "scroll",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def scroll(clicks: int, x: int | None = None, y: int | None = None) -> dict:\n    \"\"\"Scroll the wheel; positive is up, negative is down.\"\"\"\n    return harness.scroll(clicks=clicks, x=x, y=y)\n@mcp.tool\ndef type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"\n    return harness.type_text(text=text, interval=interval)\n@mcp.tool\ndef send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut such as [\\\"ctrl\\\", \\\"shift\\\", \\\"p\\\"].\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "type_text",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"\n    return harness.type_text(text=text, interval=interval)\n@mcp.tool\ndef send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut such as [\\\"ctrl\\\", \\\"shift\\\", \\\"p\\\"].\"\"\"\n    return harness.send_hotkey(*keys)\n@mcp.tool\ndef find_element(\n    window_title_regex: str,",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "send_hotkey",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut such as [\\\"ctrl\\\", \\\"shift\\\", \\\"p\\\"].\"\"\"\n    return harness.send_hotkey(*keys)\n@mcp.tool\ndef find_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "find_element",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def find_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Find a UIA element in the target window.\"\"\"\n    return harness.find_element(",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "click_element",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def click_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n    button: str = \"left\",\n) -> dict:\n    \"\"\"Click a UIA element by name, automation id, or control type.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "get_uia_tree",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def get_uia_tree(window_title_regex: str, max_depth: int = 3, max_children_per_node: int = 50) -> dict:\n    \"\"\"Serialize part of the UIA tree for a target window.\"\"\"\n    return harness.get_uia_tree(\n        window_title_regex=window_title_regex,\n        max_depth=max_depth,\n        max_children_per_node=max_children_per_node,\n    )\n@mcp.tool\ndef tail_log(filename: str | None = None, lines: int = 200) -> dict:\n    \"\"\"Read the last N lines from the newest log or a specific log file.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "tail_log",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def tail_log(filename: str | None = None, lines: int = 200) -> dict:\n    \"\"\"Read the last N lines from the newest log or a specific log file.\"\"\"\n    return harness.tail_log(filename=filename, lines=lines)\n@mcp.tool\ndef collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:\n    \"\"\"Copy recently modified logs into an artifacts directory.\"\"\"\n    return harness.collect_recent_logs(minutes=minutes, output_dir=output_dir)\nif __name__ == \"__main__\":\n    mcp.run()",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "collect_recent_logs",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:\n    \"\"\"Copy recently modified logs into an artifacts directory.\"\"\"\n    return harness.collect_recent_logs(minutes=minutes, output_dir=output_dir)\nif __name__ == \"__main__\":\n    mcp.run()",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "mcp",
+        "kind": 5,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "mcp = FastMCP(\"win-gui\")\nharness = DesktopHarness()\n@mcp.tool\ndef ping() -> dict:\n    return {\"ok\": True, \"message\": \"win-gui MCP is alive\"}\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "harness",
+        "kind": 5,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "harness = DesktopHarness()\n@mcp.tool\ndef ping() -> dict:\n    return {\"ok\": True, \"message\": \"win-gui MCP is alive\"}\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None) -> dict:",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "WindowInfo",
+        "kind": 6,
+        "importPath": "win_gui_core",
+        "description": "win_gui_core",
+        "peekOfCode": "class WindowInfo:\n    hwnd: int\n    title: str\n    class_name: str\n    pid: int\n    rect: tuple[int, int, int, int]\n    visible: bool\n    def as_dict(self) -> dict[str, Any]:\n        left, top, right, bottom = self.rect\n        return {",
+        "detail": "win_gui_core",
+        "documentation": {}
+    },
+    {
+        "label": "DesktopHarness",
+        "kind": 6,
+        "importPath": "win_gui_core",
+        "description": "win_gui_core",
+        "peekOfCode": "class DesktopHarness:\n    def __init__(self) -> None:\n        self.app_exe = os.environ.get(\"APP_EXE\", \"\")\n        self.app_workdir = os.environ.get(\"APP_WORKDIR\", \"\")\n        self.app_log_dir = Path(os.environ.get(\"APP_LOG_DIR\", \"logs\"))\n        self.app_state_dir = Path(os.environ.get(\"APP_STATE_DIR\", \"state\"))\n        self.main_window_title_regex = os.environ.get(\"MAIN_WINDOW_TITLE_REGEX\", \".*\")\n        self._last_pid: int | None = None\n        self._desktop = Desktop(backend=\"uia\")\n    def launch_app(self, args: list[str] | None = None) -> dict[str, Any]:",
+        "detail": "win_gui_core",
+        "documentation": {}
+    },
+    {
+        "label": "pyautogui.FAILSAFE",
+        "kind": 5,
+        "importPath": "win_gui_core",
+        "description": "win_gui_core",
+        "peekOfCode": "pyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\n@dataclass\nclass WindowInfo:\n    hwnd: int\n    title: str\n    class_name: str\n    pid: int\n    rect: tuple[int, int, int, int]\n    visible: bool",
+        "detail": "win_gui_core",
+        "documentation": {}
+    },
+    {
+        "label": "pyautogui.PAUSE",
+        "kind": 5,
+        "importPath": "win_gui_core",
+        "description": "win_gui_core",
+        "peekOfCode": "pyautogui.PAUSE = 0.03\n@dataclass\nclass WindowInfo:\n    hwnd: int\n    title: str\n    class_name: str\n    pid: int\n    rect: tuple[int, int, int, int]\n    visible: bool\n    def as_dict(self) -> dict[str, Any]:",
+        "detail": "win_gui_core",
+        "documentation": {}
+    }
+]
