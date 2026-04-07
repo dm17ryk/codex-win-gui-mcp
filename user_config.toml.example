@@ -1,0 +1,21 @@
+model = "gpt-5.4"
+model_provider = "openai"
+
+[windows]
+sandbox = "elevated"
+sandbox_private_desktop = false
+
+[mcp_servers.win_gui]
+command = 'C:\dev\codex-win-gui-starter\.venv\Scripts\python.exe'
+args = ['C:\dev\codex-win-gui-starter\server.py']
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+enabled = true
+required = false
+
+[mcp_servers.win_gui.env]
+APP_EXE = 'C:\work\MyApp\bin\Debug\MyApp.exe'
+APP_WORKDIR = 'C:\work\MyApp'
+APP_LOG_DIR = 'C:\work\MyApp\logs'
+APP_STATE_DIR = 'C:\Users\<you>\AppData\Local\MyApp'
+MAIN_WINDOW_TITLE_REGEX = 'MyApp'
