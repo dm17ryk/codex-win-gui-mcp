@@ -46,6 +46,6 @@ dotnet build .\MyApp.sln -c Debug
 
 ## Recommended Codex prompts
 
-- `Launch the app, open the Settings tab, and inspect the UI tree before clicking anything.`
-- `Reproduce the bug, then tail the latest log and summarize the failure.`
-- `Use click_element first; if the target isn't in UIA, fall back to screenshot-driven clicks.`
+- `Launch the app, create a session, wait for the window to stabilize, and inspect the UI tree before clicking anything.`
+- `Reproduce the bug, assert the expected UI state, then create an artifact bundle and summarize the failure.`
+- `Use click_element first; if the target isn't in UIA, capture a screenshot and use viewport-relative click_point or drag_path.`

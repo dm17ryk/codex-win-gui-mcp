@@ -2,134 +2,141 @@ from __future__ import annotations
 
 from fastmcp import FastMCP
 
-from win_gui_core import DesktopHarness
+from win_gui_core.service import WinGuiService
 
 
 mcp = FastMCP("win-gui")
-harness = DesktopHarness()
+service = WinGuiService()
 
 
 @mcp.tool
 def ping() -> dict:
-    return {"ok": True, "message": "win-gui MCP is alive"}
+    """Check whether the Windows GUI MCP server is responsive."""
+    return service.ping()
 
 
 @mcp.tool
 def launch_app(args: list[str] | None = None) -> dict:
-    """Launch the configured Windows GUI application."""
-    return harness.launch_app(args=args)
+    """Launch the configured application with optional extra arguments."""
+    return service.launch_app(args=args)
 
 
 @mcp.tool
-def close_app(pid: int | None = None) -> dict:
-    """Close the configured app (or a specific pid)."""
-    return harness.close_app(pid=pid)
+def close_app(pid: int | None = None, timeout_sec: float = 10.0) -> dict:
+    """Close the configured application or an explicit process tree."""
+    return service.close_app(pid=pid, timeout_sec=timeout_sec)
 
 
 @mcp.tool
 def restart_app(args: list[str] | None = None) -> dict:
-    """Restart the configured app."""
-    return harness.restart_app(args=args)
+    """Restart the configured application."""
+    return service.restart_app(args=args)
 
 
 @mcp.tool
-def list_windows() -> list[dict]:
-    """List top-level windows visible to the current desktop session."""
-    return harness.list_windows()
+def create_session(title_regex: str | None = None, pid: int | None = None, adapter: str | None = None, capture_mode: str = "window") -> dict:
+    """Create or attach an active automation session for a window, region, or the full desktop."""
+    return service.create_session(title_regex=title_regex, pid=pid, adapter=adapter, capture_mode=capture_mode)
 
 
 @mcp.tool
-def wait_main_window(title_regex: str | None = None, timeout_sec: float = 20.0, pid: int | None = None) -> dict:
-    """Wait until a visible top-level window matches the regex."""
-    return harness.wait_main_window(title_regex=title_regex, timeout_sec=timeout_sec, pid=pid)
+def get_session() -> dict:
+    """Return the active session metadata, including the last viewport and artifact paths."""
+    return service.get_session()
 
 
 @mcp.tool
-def focus_window(hwnd: int) -> dict:
-    """Bring a window to foreground."""
-    return harness.focus_window(hwnd=hwnd)
+def refresh_session() -> dict:
+    """Refresh the active session by rebinding the target HWND and PID when needed."""
+    return service.refresh_session()
 
 
 @mcp.tool
-def move_window(hwnd: int, x: int, y: int, width: int, height: int) -> dict:
-    """Move/resize a window using Win32, not by dragging the title bar."""
-    return harness.move_window(hwnd=hwnd, x=x, y=y, width=width, height=height)
+def close_session() -> dict:
+    """Close the active automation session without terminating the target application."""
+    return service.close_session()
 
 
 @mcp.tool
-def capture_screenshot(
-    full_screen: bool = False,
+def enumerate_monitors() -> dict:
+    """List the connected monitors and their desktop bounds."""
+    return service.enumerate_monitors()
+
+
+@mcp.tool
+def restore_window(hwnd: int | None = None) -> dict:
+    """Restore and foreground the session window or an explicit HWND."""
+    return service.restore_window(hwnd=hwnd)
+
+
+@mcp.tool
+def wait_window_stable(timeout_sec: float = 5.0) -> dict:
+    """Wait until the active session window stops moving or recreating."""
+    return service.wait_window_stable(timeout_sec=timeout_sec)
+
+
+@mcp.tool
+def capture_screenshot(mode: str = "window", region: dict | None = None, embed_base64: bool = False) -> dict:
+    """Capture a screenshot for the active session mode and return full viewport metadata."""
+    return service.capture_screenshot(mode=mode, region=region, embed_base64=embed_base64)
+
+
+@mcp.tool
+def capture_region(
+    x: int,
+    y: int,
+    width: int,
+    height: int,
+    absolute: bool = True,
     hwnd: int | None = None,
-    title_regex: str | None = None,
     embed_base64: bool = False,
 ) -> dict:
-    """Capture the full screen or a single window. Set embed_base64=true when the model needs pixels inline."""
-    return harness.capture_screenshot(
-        full_screen=full_screen,
+    """Capture an explicit region in screen coordinates or relative to the active viewport."""
+    return service.capture_region(
+        x=x,
+        y=y,
+        width=width,
+        height=height,
+        absolute=absolute,
         hwnd=hwnd,
-        title_regex=title_regex,
         embed_base64=embed_base64,
     )
 
 
 @mcp.tool
-def click_xy(x: int, y: int, button: str = "left", absolute: bool = True, hwnd: int | None = None) -> dict:
-    """Click at absolute screen coordinates or window-relative coordinates."""
-    return harness.click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)
+def click_point(x: int, y: int, coord_space: str = "viewport", button: str = "left") -> dict:
+    """Click a point in viewport or desktop coordinates."""
+    return service.click_point(x=x, y=y, coord_space=coord_space, button=button)
 
 
 @mcp.tool
-def double_click_xy(x: int, y: int, button: str = "left", absolute: bool = True, hwnd: int | None = None) -> dict:
-    """Double-click at absolute screen coordinates or window-relative coordinates."""
-    return harness.double_click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)
+def double_click_point(x: int, y: int, coord_space: str = "viewport", button: str = "left") -> dict:
+    """Double-click a point in viewport or desktop coordinates."""
+    return service.double_click_point(x=x, y=y, coord_space=coord_space, button=button)
 
 
 @mcp.tool
-def drag_mouse(
-    x1: int,
-    y1: int,
-    x2: int,
-    y2: int,
-    absolute: bool = True,
-    hwnd: int | None = None,
-    duration: float = 0.25,
-    button: str = "left",
-) -> dict:
-    """Drag the mouse between two points."""
-    return harness.drag_mouse(
-        x1=x1,
-        y1=y1,
-        x2=x2,
-        y2=y2,
-        absolute=absolute,
-        hwnd=hwnd,
-        duration=duration,
-        button=button,
-    )
+def drag_path(path: list[dict], coord_space: str = "viewport", button: str = "left") -> dict:
+    """Drag along a point path expressed in viewport or desktop coordinates."""
+    return service.drag_path(path=path, coord_space=coord_space, button=button)
 
 
 @mcp.tool
-def move_mouse(x: int, y: int) -> dict:
-    """Move the mouse cursor to absolute screen coordinates."""
-    return harness.move_mouse(x=x, y=y)
-
-
-@mcp.tool
-def scroll(clicks: int, x: int | None = None, y: int | None = None) -> dict:
-    """Scroll the wheel; positive is up, negative is down."""
-    return harness.scroll(clicks=clicks, x=x, y=y)
+def scroll_at(clicks: int, x: int | None = None, y: int | None = None, coord_space: str = "viewport") -> dict:
+    """Scroll at a viewport-relative or desktop-relative point."""
+    return service.scroll_at(clicks=clicks, x=x, y=y, coord_space=coord_space)
 
 
 @mcp.tool
 def type_text(text: str, interval: float = 0.01) -> dict:
     """Type text into the currently focused control."""
-    return harness.type_text(text=text, interval=interval)
+    return service.type_text(text=text, interval=interval)
 
 
 @mcp.tool
 def send_hotkey(keys: list[str]) -> dict:
-    """Press a keyboard shortcut such as [\"ctrl\", \"shift\", \"p\"]."""
-    return harness.send_hotkey(*keys)
+    """Press a keyboard shortcut expressed as a list of key names."""
+    return service.send_hotkey(keys=keys)
 
 
 @mcp.tool
@@ -141,8 +148,68 @@ def find_element(
     found_index: int = 0,
     timeout_sec: float = 2.0,
 ) -> dict:
-    """Find a UIA element in the target window."""
-    return harness.find_element(
+    """Find a UIA element in a target window by text, automation id, or control type."""
+    return service.find_element(
+        window_title_regex=window_title_regex,
+        name=name,
+        auto_id=auto_id,
+        control_type=control_type,
+        found_index=found_index,
+        timeout_sec=timeout_sec,
+    )
+
+
+@mcp.tool
+def wait_for_element(
+    window_title_regex: str,
+    name: str | None = None,
+    auto_id: str | None = None,
+    control_type: str | None = None,
+    found_index: int = 0,
+    timeout_sec: float = 2.0,
+) -> dict:
+    """Wait until a UIA element becomes available."""
+    return service.wait_for_element(
+        window_title_regex=window_title_regex,
+        name=name,
+        auto_id=auto_id,
+        control_type=control_type,
+        found_index=found_index,
+        timeout_sec=timeout_sec,
+    )
+
+
+@mcp.tool
+def wait_for_element_gone(
+    window_title_regex: str,
+    name: str | None = None,
+    auto_id: str | None = None,
+    control_type: str | None = None,
+    found_index: int = 0,
+    timeout_sec: float = 2.0,
+) -> dict:
+    """Wait until a UIA element is no longer present."""
+    return service.wait_for_element_gone(
+        window_title_regex=window_title_regex,
+        name=name,
+        auto_id=auto_id,
+        control_type=control_type,
+        found_index=found_index,
+        timeout_sec=timeout_sec,
+    )
+
+
+@mcp.tool
+def assert_element(
+    window_title_regex: str,
+    name: str | None = None,
+    auto_id: str | None = None,
+    control_type: str | None = None,
+    found_index: int = 0,
+    timeout_sec: float = 2.0,
+) -> dict:
+    """Assert that a UIA element is present."""
+    return service.assert_element(
         window_title_regex=window_title_regex,
         name=name,
         auto_id=auto_id,
@@ -162,8 +229,8 @@ def click_element(
     timeout_sec: float = 2.0,
     button: str = "left",
 ) -> dict:
-    """Click a UIA element by name, automation id, or control type."""
-    return harness.click_element(
+    """Click a UIA element."""
+    return service.click_element(
         window_title_regex=window_title_regex,
         name=name,
         auto_id=auto_id,
@@ -175,25 +242,219 @@ def click_element(
 
 
 @mcp.tool
-def get_uia_tree(window_title_regex: str, max_depth: int = 3, max_children_per_node: int = 50) -> dict:
-    """Serialize part of the UIA tree for a target window."""
-    return harness.get_uia_tree(
+def double_click_element(
+    window_title_regex: str,
+    name: str | None = None,
+    auto_id: str | None = None,
+    control_type: str | None = None,
+    found_index: int = 0,
+    timeout_sec: float = 2.0,
+) -> dict:
+    """Double-click a UIA element."""
+    return service.double_click_element(
         window_title_regex=window_title_regex,
-        max_depth=max_depth,
-        max_children_per_node=max_children_per_node,
+        name=name,
+        auto_id=auto_id,
+        control_type=control_type,
+        found_index=found_index,
+        timeout_sec=timeout_sec,
     )
 
 
 @mcp.tool
+def right_click_element(
+    window_title_regex: str,
+    name: str | None = None,
+    auto_id: str | None = None,
+    control_type: str | None = None,
+    found_index: int = 0,
+    timeout_sec: float = 2.0,
+) -> dict:
+    """Right-click a UIA element."""
+    return service.right_click_element(
+        window_title_regex=window_title_regex,
+        name=name,
+        auto_id=auto_id,
+        control_type=control_type,
+        found_index=found_index,
+        timeout_sec=timeout_sec,
+    )
+
+
+@mcp.tool
+def drag_element_to_point(
+    window_title_regex: str,
+    x: int,
+    y: int,
+    coord_space: str = "viewport",
+    name: str | None = None,
+    auto_id: str | None = None,
+    control_type: str | None = None,
+    found_index: int = 0,
+    timeout_sec: float = 2.0,
+) -> dict:
+    """Drag an element to a target point."""
+    return service.drag_element_to_point(
+        window_title_regex=window_title_regex,
+        x=x,
+        y=y,
+        coord_space=coord_space,
+        name=name,
+        auto_id=auto_id,
+        control_type=control_type,
+        found_index=found_index,
+        timeout_sec=timeout_sec,
+    )
+
+
+@mcp.tool
+def drag_element_to_element(source: dict, target: dict) -> dict:
+    """Drag one UIA element onto another UIA element."""
+    return service.drag_element_to_element(source=source, target=target)
+
+
+@mcp.tool
+def get_uia_tree(window_title_regex: str, max_depth: int = 3, max_children_per_node: int = 50) -> dict:
+    """Serialize part of the UIA tree for a target window."""
+    return service.get_uia_tree(window_title_regex=window_title_regex, max_depth=max_depth, max_children_per_node=max_children_per_node)
+
+
+@mcp.tool
+def assert_window_title(window_title_regex: str, expected_pattern: str) -> dict:
+    """Assert that a target window title matches a regular expression."""
+    return service.assert_window_title(window_title_regex=window_title_regex, expected_pattern=expected_pattern)
+
+
+@mcp.tool
+def assert_status_text(window_title_regex: str, expected_text: str, timeout_sec: float = 2.0) -> dict:
+    """Assert that a target window exposes status text containing the expected substring."""
+    return service.assert_status_text(window_title_regex=window_title_regex, expected_text=expected_text, timeout_sec=timeout_sec)
+
+
+@mcp.tool
 def tail_log(filename: str | None = None, lines: int = 200) -> dict:
-    """Read the last N lines from the newest log or a specific log file."""
-    return harness.tail_log(filename=filename, lines=lines)
+    """Read the last lines from the newest log or a named log file."""
+    return service.tail_log(filename=filename, lines=lines)
+
+
+@mcp.tool
+def assert_log_contains(expected_text: str, filename: str | None = None, lines: int = 400) -> dict:
+    """Assert that the newest or named log contains the expected text."""
+    return service.assert_log_contains(expected_text=expected_text, filename=filename, lines=lines)
 
 
 @mcp.tool
 def collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:
-    """Copy recently modified logs into an artifacts directory."""
-    return harness.collect_recent_logs(minutes=minutes, output_dir=output_dir)
+    """Copy recently modified logs while preserving their relative directory structure."""
+    return service.collect_recent_logs(minutes=minutes, output_dir=output_dir)
+
+
+@mcp.tool
+def wait_process_idle(pid: int | None = None, cpu_threshold: float = 2.0, timeout_sec: float = 10.0) -> dict:
+    """Wait until a process tree becomes mostly idle."""
+    return service.wait_process_idle(pid=pid, cpu_threshold=cpu_threshold, timeout_sec=timeout_sec)
+
+
+@mcp.tool
+def create_artifact_bundle(reason: str | None = None) -> dict:
+    """Collect screenshots, traces, logs, dumps, and state snapshots into a bundle."""
+    return service.create_artifact_bundle(reason=reason)
+
+
+@mcp.tool
+def list_artifacts() -> dict:
+    """List the stored session artifact directories."""
+    return service.list_artifacts()
+
+
+@mcp.tool
+def collect_event_logs(minutes: int = 60, output_dir: str | None = None) -> dict:
+    """Collect recent Windows Application event log entries."""
+    return service.collect_event_logs(minutes=minutes, output_dir=output_dir)
+
+
+@mcp.tool
+def collect_dumps(output_dir: str | None = None) -> dict:
+    """Collect crash dumps from the configured dump directory."""
+    return service.collect_dumps(output_dir=output_dir)
+
+
+@mcp.tool
+def get_process_tree(pid: int | None = None) -> dict:
+    """Return the target process tree rooted at the session PID or an explicit PID."""
+    return service.get_process_tree(pid=pid)
+
+
+@mcp.tool
+def dump_qt_state() -> dict:
+    """Run the target application's Qt state dump endpoint and return the parsed JSON."""
+    return service.dump_qt_state()
+
+
+@mcp.tool
+def find_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:
+    """Find an instrumented Qt object by objectName, accessibleName, or role."""
+    return service.find_qt_object(object_name=object_name, accessible_name=accessible_name, role=role)
+
+
+@mcp.tool
+def click_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:
+    """Resolve an instrumented Qt object intended for click-style interaction."""
+    return service.click_qt_object(object_name=object_name, accessible_name=accessible_name, role=role)
+
+
+@mcp.tool
+def invoke_qt_action(action_name: str) -> dict:
+    """Resolve an instrumented Qt action by name."""
+    return service.invoke_qt_action(action_name=action_name)
+
+
+@mcp.tool
+def set_qt_value(value: str, object_name: str | None = None, accessible_name: str | None = None) -> dict:
+    """Resolve an instrumented Qt value-bearing control."""
+    return service.set_qt_value(value=value, object_name=object_name, accessible_name=accessible_name)
+
+
+@mcp.tool
+def toggle_qt_control(object_name: str | None = None, accessible_name: str | None = None) -> dict:
+    """Resolve an instrumented Qt toggle control."""
+    return service.toggle_qt_control(object_name=object_name, accessible_name=accessible_name)
+
+
+@mcp.tool
+def klogg_open_log(path: str) -> dict:
+    """Prepare an instrumented klogg instance to open a log file."""
+    return service.klogg_open_log(path=path)
+
+
+@mcp.tool
+def klogg_search(text: str, regex: bool = False, case_sensitive: bool = False) -> dict:
+    """Execute or describe a klogg search request."""
+    return service.klogg_search(text=text, regex=regex, case_sensitive=case_sensitive)
+
+
+@mcp.tool
+def klogg_get_state() -> dict:
+    """Return the normalized instrumented klogg state snapshot."""
+    return service.klogg_get_state()
+
+
+@mcp.tool
+def klogg_get_active_tab() -> dict:
+    """Return the current klogg tab metadata."""
+    return service.klogg_get_active_tab()
+
+
+@mcp.tool
+def klogg_toggle_follow(enabled: bool | None = None) -> dict:
+    """Toggle or set klogg follow mode."""
+    return service.klogg_toggle_follow(enabled=enabled)
+
+
+@mcp.tool
+def klogg_get_visible_range() -> dict:
+    """Return the visible klogg line range."""
+    return service.klogg_get_visible_range()
 
 
 if __name__ == "__main__":

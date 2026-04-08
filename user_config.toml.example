@@ -6,8 +6,8 @@ sandbox = "elevated"
 sandbox_private_desktop = false
 
 [mcp_servers.win_gui]
-command = 'C:\dev\codex-win-gui-starter\.venv\Scripts\python.exe'
-args = ['C:\dev\codex-win-gui-starter\server.py']
+command = 'D:\Essence_SC\lsrc\codex-win-gui-mcp\.venv\Scripts\python.exe'
+args = ['D:\Essence_SC\lsrc\codex-win-gui-mcp\server.py']
 startup_timeout_sec = 20
 tool_timeout_sec = 120
 enabled = true
@@ -16,6 +16,10 @@ required = false
 [mcp_servers.win_gui.env]
 APP_EXE = 'C:\work\MyApp\bin\Debug\MyApp.exe'
 APP_WORKDIR = 'C:\work\MyApp'
+APP_ARGS = ''
 APP_LOG_DIR = 'C:\work\MyApp\logs'
 APP_STATE_DIR = 'C:\Users\<you>\AppData\Local\MyApp'
+APP_DUMP_DIR = 'C:\work\MyApp\dumps'
 MAIN_WINDOW_TITLE_REGEX = 'MyApp'
+APP_STATE_DUMP_ARG = '--dump-state-json'
+QT_AUTOMATION_ENV_VAR = 'KLOGG_AUTOMATION'

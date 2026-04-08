@@ -114,12 +114,283 @@
         "documentation": {}
     },
     {
-        "label": "base64",
-        "kind": 6,
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
         "isExtraImport": true,
-        "importPath": "base64",
-        "description": "base64",
-        "detail": "base64",
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "AdapterError",
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "isExtraImport": true,
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "AdapterError",
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "isExtraImport": true,
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "WinGuiError",
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "isExtraImport": true,
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "CoordinateTranslationError",
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "isExtraImport": true,
+        "detail": "win_gui_core.errors",
         "documentation": {}
     },
     {
@@ -132,111 +403,35 @@
         "documentation": {}
     },
     {
-        "label": "time",
-        "kind": 6,
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
         "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
+        "detail": "dataclasses",
         "documentation": {}
     },
     {
-        "label": "contextmanager",
-        "importPath": "contextlib",
-        "description": "contextlib",
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
         "isExtraImport": true,
-        "detail": "contextlib",
+        "detail": "dataclasses",
         "documentation": {}
     },
     {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "dataclasses",
         "documentation": {}
     },
     {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
         "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "pyautogui",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pyautogui",
-        "description": "pyautogui",
-        "detail": "pyautogui",
-        "documentation": {}
-    },
-    {
-        "label": "OpenAI",
-        "importPath": "openai",
-        "description": "openai",
-        "isExtraImport": true,
-        "detail": "openai",
-        "documentation": {}
-    },
-    {
-        "label": "DesktopHarness",
-        "importPath": "win_gui_core",
-        "description": "win_gui_core",
-        "isExtraImport": true,
-        "detail": "win_gui_core",
-        "documentation": {}
-    },
-    {
-        "label": "DesktopHarness",
-        "importPath": "win_gui_core",
-        "description": "win_gui_core",
-        "isExtraImport": true,
-        "detail": "win_gui_core",
-        "documentation": {}
-    },
-    {
-        "label": "FastMCP",
-        "importPath": "fastmcp",
-        "description": "fastmcp",
-        "isExtraImport": true,
-        "detail": "fastmcp",
-        "documentation": {}
-    },
-    {
-        "label": "io",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "io",
-        "description": "io",
-        "detail": "io",
-        "documentation": {}
-    },
-    {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
+        "detail": "dataclasses",
         "documentation": {}
     },
     {
@@ -256,12 +451,270 @@
         "documentation": {}
     },
     {
-        "label": "mss",
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "time",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "mss",
-        "description": "mss",
-        "detail": "mss",
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_drag_path",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "isExtraImport": true,
+        "detail": "win_gui_core.input",
+        "documentation": {}
+    },
+    {
+        "label": "with_modifiers",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "isExtraImport": true,
+        "detail": "win_gui_core.input",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_drag_path",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "isExtraImport": true,
+        "detail": "win_gui_core.input",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_key",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "isExtraImport": true,
+        "detail": "win_gui_core.input",
+        "documentation": {}
+    },
+    {
+        "label": "viewport_to_screen",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "isExtraImport": true,
+        "detail": "win_gui_core.input",
+        "documentation": {}
+    },
+    {
+        "label": "WinGuiService",
+        "importPath": "win_gui_core.service",
+        "description": "win_gui_core.service",
+        "isExtraImport": true,
+        "detail": "win_gui_core.service",
+        "documentation": {}
+    },
+    {
+        "label": "WinGuiService",
+        "importPath": "win_gui_core.service",
+        "description": "win_gui_core.service",
+        "isExtraImport": true,
+        "detail": "win_gui_core.service",
+        "documentation": {}
+    },
+    {
+        "label": "WinGuiService",
+        "importPath": "win_gui_core.service",
+        "description": "win_gui_core.service",
+        "isExtraImport": true,
+        "detail": "win_gui_core.service",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "KloggAdapter",
+        "importPath": "adapters.klogg_adapter",
+        "description": "adapters.klogg_adapter",
+        "isExtraImport": true,
+        "detail": "adapters.klogg_adapter",
+        "documentation": {}
+    },
+    {
+        "label": "KloggAdapter",
+        "importPath": "adapters.klogg_adapter",
+        "description": "adapters.klogg_adapter",
+        "isExtraImport": true,
+        "detail": "adapters.klogg_adapter",
+        "documentation": {}
+    },
+    {
+        "label": "QtAdapter",
+        "importPath": "adapters.qt_adapter",
+        "description": "adapters.qt_adapter",
+        "isExtraImport": true,
+        "detail": "adapters.qt_adapter",
+        "documentation": {}
+    },
+    {
+        "label": "QtAdapter",
+        "importPath": "adapters.qt_adapter",
+        "description": "adapters.qt_adapter",
+        "isExtraImport": true,
+        "detail": "adapters.qt_adapter",
+        "documentation": {}
+    },
+    {
+        "label": "ArtifactManager",
+        "importPath": "win_gui_core.artifacts",
+        "description": "win_gui_core.artifacts",
+        "isExtraImport": true,
+        "detail": "win_gui_core.artifacts",
+        "documentation": {}
+    },
+    {
+        "label": "LogManager",
+        "importPath": "win_gui_core.logs",
+        "description": "win_gui_core.logs",
+        "isExtraImport": true,
+        "detail": "win_gui_core.logs",
+        "documentation": {}
+    },
+    {
+        "label": "LogManager",
+        "importPath": "win_gui_core.logs",
+        "description": "win_gui_core.logs",
+        "isExtraImport": true,
+        "detail": "win_gui_core.logs",
+        "documentation": {}
+    },
+    {
+        "label": "SessionStore",
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "isExtraImport": true,
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "Viewport",
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "isExtraImport": true,
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "SessionStore",
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "isExtraImport": true,
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "Viewport",
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "isExtraImport": true,
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "contextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "pyautogui",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyautogui",
+        "description": "pyautogui",
+        "detail": "pyautogui",
         "documentation": {}
     },
     {
@@ -271,6 +724,67 @@
         "importPath": "psutil",
         "description": "psutil",
         "detail": "psutil",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "mss",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mss",
+        "description": "mss",
+        "detail": "mss",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "Desktop",
+        "importPath": "pywinauto",
+        "description": "pywinauto",
+        "isExtraImport": true,
+        "detail": "pywinauto",
         "documentation": {}
     },
     {
@@ -301,35 +815,19 @@
         "documentation": {}
     },
     {
-        "label": "Image",
-        "importPath": "PIL",
-        "description": "PIL",
+        "label": "ComputerUseRunner",
+        "importPath": "loops.computer_use",
+        "description": "loops.computer_use",
         "isExtraImport": true,
-        "detail": "PIL",
+        "detail": "loops.computer_use",
         "documentation": {}
     },
     {
-        "label": "Desktop",
-        "importPath": "pywinauto",
-        "description": "pywinauto",
+        "label": "FastMCP",
+        "importPath": "fastmcp",
+        "description": "fastmcp",
         "isExtraImport": true,
-        "detail": "pywinauto",
-        "documentation": {}
-    },
-    {
-        "label": "ElementNotFoundError",
-        "importPath": "pywinauto.findwindows",
-        "description": "pywinauto.findwindows",
-        "isExtraImport": true,
-        "detail": "pywinauto.findwindows",
-        "documentation": {}
-    },
-    {
-        "label": "WindowNotFoundError",
-        "importPath": "pywinauto.findwindows",
-        "description": "pywinauto.findwindows",
-        "isExtraImport": true,
-        "detail": "pywinauto.findwindows",
+        "detail": "fastmcp",
         "documentation": {}
     },
     {
@@ -612,84 +1110,372 @@
         "documentation": {}
     },
     {
-        "label": "field",
-        "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "def field(obj: Any, name: str, default: Any = None) -> Any:\n    if isinstance(obj, dict):\n        return obj.get(name, default)\n    return getattr(obj, name, default)\n@contextmanager\ndef with_modifiers(keys: Iterable[str] | None):\n    normalized = [normalize_key(k) for k in (keys or [])]\n    for key in normalized:\n        pyautogui.keyDown(key)\n    try:",
-        "detail": "openai_loop",
+        "label": "KloggAdapter",
+        "kind": 6,
+        "importPath": "adapters.klogg_adapter",
+        "description": "adapters.klogg_adapter",
+        "peekOfCode": "class KloggAdapter:\n    def __init__(self, qt_adapter: QtAdapter) -> None:\n        self.qt_adapter = qt_adapter\n    def klogg_get_state(self) -> dict[str, Any]:\n        state = self.qt_adapter.dump_qt_state()\n        return {\"ok\": True, \"state\": self._extract_klogg_state(state)}\n    def klogg_get_active_tab(self) -> dict[str, Any]:\n        state = self.qt_adapter.dump_qt_state()\n        extracted = self._extract_klogg_state(state)\n        return {\"ok\": True, \"active_tab_title\": extracted[\"active_tab_title\"], \"active_file\": extracted[\"active_file\"]}",
+        "detail": "adapters.klogg_adapter",
         "documentation": {}
     },
     {
-        "label": "with_modifiers",
-        "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "def with_modifiers(keys: Iterable[str] | None):\n    normalized = [normalize_key(k) for k in (keys or [])]\n    for key in normalized:\n        pyautogui.keyDown(key)\n    try:\n        yield\n    finally:\n        for key in reversed(normalized):\n            pyautogui.keyUp(key)\ndef normalize_key(key: str) -> str:",
-        "detail": "openai_loop",
+        "label": "QtLocator",
+        "kind": 6,
+        "importPath": "adapters.qt_adapter",
+        "description": "adapters.qt_adapter",
+        "peekOfCode": "class QtLocator:\n    object_name: str | None = None\n    accessible_name: str | None = None\n    role: str | None = None\n    def as_dict(self) -> dict[str, Any]:\n        return {\n            \"object_name\": self.object_name,\n            \"accessible_name\": self.accessible_name,\n            \"role\": self.role,\n        }",
+        "detail": "adapters.qt_adapter",
+        "documentation": {}
+    },
+    {
+        "label": "QtAdapter",
+        "kind": 6,
+        "importPath": "adapters.qt_adapter",
+        "description": "adapters.qt_adapter",
+        "peekOfCode": "class QtAdapter:\n    def __init__(self, *, app_exe: str, app_workdir: str, dump_arg: str, automation_env_var: str) -> None:\n        self.app_exe = app_exe\n        self.app_workdir = app_workdir\n        self.dump_arg = dump_arg\n        self.automation_env_var = automation_env_var\n    def dump_qt_state(self) -> dict[str, Any]:\n        if not self.app_exe:\n            raise AdapterError(\"APP_EXE is not configured for Qt state dumps.\")\n        with tempfile.NamedTemporaryFile(prefix=\"qt-state-\", suffix=\".json\", delete=False) as handle:",
+        "detail": "adapters.qt_adapter",
+        "documentation": {}
+    },
+    {
+        "label": "ComputerUseRunner",
+        "kind": 6,
+        "importPath": "loops.computer_use",
+        "description": "loops.computer_use",
+        "peekOfCode": "class ComputerUseRunner:\n    def __init__(self, service: WinGuiService | None = None, client: OpenAI | None = None) -> None:\n        self.service = service or WinGuiService()\n        self.client = client or OpenAI()\n    def run(self, *, goal: str, window_title: str | None, full_screen: bool) -> Any:\n        capture_mode = \"full_screen\" if full_screen else \"window\"\n        self.service.create_session(title_regex=window_title, capture_mode=capture_mode)\n        response = self._send_first_request(goal)\n        while True:\n            computer_call = self._find_computer_call(response)",
+        "detail": "loops.computer_use",
+        "documentation": {}
+    },
+    {
+        "label": "AdapterParsingTests",
+        "kind": 6,
+        "importPath": "tests.test_adapters",
+        "description": "tests.test_adapters",
+        "peekOfCode": "class AdapterParsingTests(unittest.TestCase):\n    def test_qt_find_object_matches_object_name(self) -> None:\n        adapter = QtAdapter(app_exe=\"\", app_workdir=\"\", dump_arg=\"--dump-state-json\", automation_env_var=\"KLOGG_AUTOMATION\")\n        state = {\n            \"children\": [\n                {\"objectName\": \"searchLineEdit\", \"accessibleName\": \"Search\", \"role\": \"LineEdit\", \"children\": []}\n            ]\n        }\n        result = adapter.find_qt_object(object_name=\"searchLineEdit\", state=state)\n        self.assertEqual(result[\"object\"][\"accessibleName\"], \"Search\")",
+        "detail": "tests.test_adapters",
+        "documentation": {}
+    },
+    {
+        "label": "ArtifactTests",
+        "kind": 6,
+        "importPath": "tests.test_artifacts",
+        "description": "tests.test_artifacts",
+        "peekOfCode": "class ArtifactTests(unittest.TestCase):\n    def test_bundle_writes_manifest(self) -> None:\n        with tempfile.TemporaryDirectory() as tmp:\n            root = Path(tmp)\n            logs_dir = root / \"logs\"\n            logs_dir.mkdir()\n            (logs_dir / \"app.log\").write_text(\"hello\", encoding=\"utf-8\")\n            store = SessionStore(root / \"sessions\")\n            session = store.create(title_regex=\"MyApp\", pid=1, hwnd=2, capture_mode=\"window\", adapter=None)\n            manager = ArtifactManager(store, LogManager(logs_dir))",
+        "detail": "tests.test_artifacts",
+        "documentation": {}
+    },
+    {
+        "label": "InputTests",
+        "kind": 6,
+        "importPath": "tests.test_input",
+        "description": "tests.test_input",
+        "peekOfCode": "class InputTests(unittest.TestCase):\n    def test_viewport_to_screen_translates_window_coordinates(self) -> None:\n        viewport = Viewport(\n            mode=\"window\",\n            left=100,\n            top=50,\n            width=800,\n            height=600,\n            hwnd=1,\n            pid=2,",
+        "detail": "tests.test_input",
+        "documentation": {}
+    },
+    {
+        "label": "LogManagerTests",
+        "kind": 6,
+        "importPath": "tests.test_logs",
+        "description": "tests.test_logs",
+        "peekOfCode": "class LogManagerTests(unittest.TestCase):\n    def test_resolve_log_path_returns_newest_file(self) -> None:\n        with tempfile.TemporaryDirectory() as tmp:\n            root = Path(tmp)\n            first = root / \"first.log\"\n            second = root / \"nested\" / \"second.log\"\n            second.parent.mkdir()\n            first.write_text(\"older\", encoding=\"utf-8\")\n            time.sleep(0.01)\n            second.write_text(\"newer\", encoding=\"utf-8\")",
+        "detail": "tests.test_logs",
+        "documentation": {}
+    },
+    {
+        "label": "SessionStoreTests",
+        "kind": 6,
+        "importPath": "tests.test_session",
+        "description": "tests.test_session",
+        "peekOfCode": "class SessionStoreTests(unittest.TestCase):\n    def test_session_create_and_update_viewport(self) -> None:\n        with tempfile.TemporaryDirectory() as tmp:\n            store = SessionStore(Path(tmp))\n            session = store.create(title_regex=\"MyApp\", pid=10, hwnd=20, capture_mode=\"window\", adapter=None)\n            viewport = Viewport(\n                mode=\"window\",\n                left=1,\n                top=2,\n                width=3,",
+        "detail": "tests.test_session",
+        "documentation": {}
+    },
+    {
+        "label": "WindowsSmokeTests",
+        "kind": 6,
+        "importPath": "tests.test_windows_smoke",
+        "description": "tests.test_windows_smoke",
+        "peekOfCode": "class WindowsSmokeTests(unittest.TestCase):\n    def test_launch_create_session_close_flow(self) -> None:\n        service = WinGuiService()\n        launch = service.launch_app()\n        self.assertTrue(launch[\"ok\"])\n        session = service.create_session()\n        self.assertTrue(session[\"ok\"])\n        close = service.close_app(pid=launch[\"pid\"])\n        self.assertTrue(close[\"ok\"])\n    def test_capture_screenshot_returns_viewport(self) -> None:",
+        "detail": "tests.test_windows_smoke",
+        "documentation": {}
+    },
+    {
+        "label": "ArtifactManager",
+        "kind": 6,
+        "importPath": "win_gui_core.artifacts",
+        "description": "win_gui_core.artifacts",
+        "peekOfCode": "class ArtifactManager:\n    def __init__(self, session_store: SessionStore, log_manager: LogManager) -> None:\n        self._session_store = session_store\n        self._logs = log_manager\n    def list_artifacts(self) -> dict[str, Any]:\n        root = Path.cwd() / \"artifacts\" / \"sessions\"\n        root.mkdir(parents=True, exist_ok=True)\n        sessions = []\n        for item in sorted(root.iterdir()):\n            if item.is_dir():",
+        "detail": "win_gui_core.artifacts",
+        "documentation": {}
+    },
+    {
+        "label": "WinGuiError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class WinGuiError(RuntimeError):\n    \"\"\"Base class for harness errors.\"\"\"\nclass SessionNotInitializedError(WinGuiError):\n    \"\"\"Raised when an active session is required but missing.\"\"\"\nclass WindowResolutionError(WinGuiError):\n    \"\"\"Raised when a target window cannot be resolved.\"\"\"\nclass FocusError(WinGuiError):\n    \"\"\"Raised when a window cannot be focused or restored.\"\"\"\nclass ScreenshotError(WinGuiError):\n    \"\"\"Raised when screenshot capture fails.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "SessionNotInitializedError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class SessionNotInitializedError(WinGuiError):\n    \"\"\"Raised when an active session is required but missing.\"\"\"\nclass WindowResolutionError(WinGuiError):\n    \"\"\"Raised when a target window cannot be resolved.\"\"\"\nclass FocusError(WinGuiError):\n    \"\"\"Raised when a window cannot be focused or restored.\"\"\"\nclass ScreenshotError(WinGuiError):\n    \"\"\"Raised when screenshot capture fails.\"\"\"\nclass CoordinateTranslationError(WinGuiError):\n    \"\"\"Raised when viewport coordinates cannot be translated safely.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "WindowResolutionError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class WindowResolutionError(WinGuiError):\n    \"\"\"Raised when a target window cannot be resolved.\"\"\"\nclass FocusError(WinGuiError):\n    \"\"\"Raised when a window cannot be focused or restored.\"\"\"\nclass ScreenshotError(WinGuiError):\n    \"\"\"Raised when screenshot capture fails.\"\"\"\nclass CoordinateTranslationError(WinGuiError):\n    \"\"\"Raised when viewport coordinates cannot be translated safely.\"\"\"\nclass UIAutomationError(WinGuiError):\n    \"\"\"Raised when a UIA lookup or action fails.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "FocusError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class FocusError(WinGuiError):\n    \"\"\"Raised when a window cannot be focused or restored.\"\"\"\nclass ScreenshotError(WinGuiError):\n    \"\"\"Raised when screenshot capture fails.\"\"\"\nclass CoordinateTranslationError(WinGuiError):\n    \"\"\"Raised when viewport coordinates cannot be translated safely.\"\"\"\nclass UIAutomationError(WinGuiError):\n    \"\"\"Raised when a UIA lookup or action fails.\"\"\"\nclass AssertionFailedError(WinGuiError):\n    \"\"\"Raised when an assertion helper fails.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "ScreenshotError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class ScreenshotError(WinGuiError):\n    \"\"\"Raised when screenshot capture fails.\"\"\"\nclass CoordinateTranslationError(WinGuiError):\n    \"\"\"Raised when viewport coordinates cannot be translated safely.\"\"\"\nclass UIAutomationError(WinGuiError):\n    \"\"\"Raised when a UIA lookup or action fails.\"\"\"\nclass AssertionFailedError(WinGuiError):\n    \"\"\"Raised when an assertion helper fails.\"\"\"\nclass AdapterError(WinGuiError):\n    \"\"\"Raised when an adapter cannot satisfy a semantic request.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "CoordinateTranslationError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class CoordinateTranslationError(WinGuiError):\n    \"\"\"Raised when viewport coordinates cannot be translated safely.\"\"\"\nclass UIAutomationError(WinGuiError):\n    \"\"\"Raised when a UIA lookup or action fails.\"\"\"\nclass AssertionFailedError(WinGuiError):\n    \"\"\"Raised when an assertion helper fails.\"\"\"\nclass AdapterError(WinGuiError):\n    \"\"\"Raised when an adapter cannot satisfy a semantic request.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "UIAutomationError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class UIAutomationError(WinGuiError):\n    \"\"\"Raised when a UIA lookup or action fails.\"\"\"\nclass AssertionFailedError(WinGuiError):\n    \"\"\"Raised when an assertion helper fails.\"\"\"\nclass AdapterError(WinGuiError):\n    \"\"\"Raised when an adapter cannot satisfy a semantic request.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "AssertionFailedError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class AssertionFailedError(WinGuiError):\n    \"\"\"Raised when an assertion helper fails.\"\"\"\nclass AdapterError(WinGuiError):\n    \"\"\"Raised when an adapter cannot satisfy a semantic request.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "AdapterError",
+        "kind": 6,
+        "importPath": "win_gui_core.errors",
+        "description": "win_gui_core.errors",
+        "peekOfCode": "class AdapterError(WinGuiError):\n    \"\"\"Raised when an adapter cannot satisfy a semantic request.\"\"\"",
+        "detail": "win_gui_core.errors",
+        "documentation": {}
+    },
+    {
+        "label": "InputController",
+        "kind": 6,
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "peekOfCode": "class InputController:\n    def resolve_point(self, x: int, y: int, *, coord_space: CoordSpace, viewport: Viewport | None) -> tuple[int, int]:\n        if coord_space == \"screen\":\n            return int(x), int(y)\n        if viewport is None:\n            raise SessionNotInitializedError(\"Viewport-relative actions require an active session viewport.\")\n        return viewport_to_screen(int(x), int(y), viewport)\n    def move_to(self, x: int, y: int, *, coord_space: CoordSpace, viewport: Viewport | None) -> dict[str, Any]:\n        tx, ty = self.resolve_point(x, y, coord_space=coord_space, viewport=viewport)\n        pyautogui.moveTo(tx, ty)",
+        "detail": "win_gui_core.input",
         "documentation": {}
     },
     {
         "label": "normalize_key",
         "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
         "peekOfCode": "def normalize_key(key: str) -> str:\n    upper = key.strip().upper()\n    return KEY_ALIASES.get(upper, key.strip().lower())\ndef normalize_drag_path(path: Any) -> list[tuple[int, int]]:\n    points: list[tuple[int, int]] = []\n    for item in path:\n        if isinstance(item, dict):\n            points.append((int(item[\"x\"]), int(item[\"y\"])))\n        elif hasattr(item, \"x\") and hasattr(item, \"y\"):\n            points.append((int(item.x), int(item.y)))",
-        "detail": "openai_loop",
+        "detail": "win_gui_core.input",
         "documentation": {}
     },
     {
         "label": "normalize_drag_path",
         "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
         "peekOfCode": "def normalize_drag_path(path: Any) -> list[tuple[int, int]]:\n    points: list[tuple[int, int]] = []\n    for item in path:\n        if isinstance(item, dict):\n            points.append((int(item[\"x\"]), int(item[\"y\"])))\n        elif hasattr(item, \"x\") and hasattr(item, \"y\"):\n            points.append((int(item.x), int(item.y)))\n        else:\n            x, y = item\n            points.append((int(x), int(y)))",
-        "detail": "openai_loop",
+        "detail": "win_gui_core.input",
         "documentation": {}
     },
     {
-        "label": "execute_actions",
+        "label": "viewport_to_screen",
         "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "def execute_actions(actions: Iterable[Any]) -> None:\n    for action in actions:\n        action_type = field(action, \"type\")\n        if action_type in {\"wait\", \"screenshot\"}:\n            if action_type == \"wait\":\n                time.sleep(2)\n            continue\n        if action_type == \"keypress\":\n            for key in field(action, \"keys\", []):\n                pyautogui.press(normalize_key(key))",
-        "detail": "openai_loop",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "peekOfCode": "def viewport_to_screen(x: int, y: int, viewport: Viewport) -> tuple[int, int]:\n    if x < 0 or y < 0:\n        raise CoordinateTranslationError(\"Viewport coordinates must be non-negative.\")\n    if x > viewport.width or y > viewport.height:\n        raise CoordinateTranslationError(\n            f\"Viewport coordinates {(x, y)} fall outside {(viewport.width, viewport.height)}.\"\n        )\n    return (\n        int(viewport.left + x * viewport.scale_x),\n        int(viewport.top + y * viewport.scale_y),",
+        "detail": "win_gui_core.input",
         "documentation": {}
     },
     {
-        "label": "send_first_request",
+        "label": "with_modifiers",
         "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "def send_first_request(goal: str):\n    return client.responses.create(\n        model=os.environ.get(\"OPENAI_COMPUTER_MODEL\", \"gpt-5.4\"),\n        tools=[{\"type\": \"computer\"}],\n        input=goal,\n    )\ndef send_screenshot(response: Any, call_id: str, screenshot_base64: str):\n    return client.responses.create(\n        model=os.environ.get(\"OPENAI_COMPUTER_MODEL\", \"gpt-5.4\"),\n        tools=[{\"type\": \"computer\"}],",
-        "detail": "openai_loop",
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "peekOfCode": "def with_modifiers(keys: Iterable[str] | None):\n    normalized = [normalize_key(key) for key in (keys or [])]\n    for key in normalized:\n        pyautogui.keyDown(key)\n    try:\n        yield\n    finally:\n        for key in reversed(normalized):\n            pyautogui.keyUp(key)\nclass InputController:",
+        "detail": "win_gui_core.input",
         "documentation": {}
     },
     {
-        "label": "send_screenshot",
-        "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "def send_screenshot(response: Any, call_id: str, screenshot_base64: str):\n    return client.responses.create(\n        model=os.environ.get(\"OPENAI_COMPUTER_MODEL\", \"gpt-5.4\"),\n        tools=[{\"type\": \"computer\"}],\n        previous_response_id=response.id,\n        input=[\n            {\n                \"type\": \"computer_call_output\",\n                \"call_id\": call_id,\n                \"output\": {",
-        "detail": "openai_loop",
+        "label": "pyautogui.FAILSAFE",
+        "kind": 5,
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "peekOfCode": "pyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",",
+        "detail": "win_gui_core.input",
         "documentation": {}
     },
     {
-        "label": "find_computer_call",
-        "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "def find_computer_call(response: Any):\n    for item in response.output:\n        if field(item, \"type\") == \"computer_call\":\n            return item\n    return None\ndef computer_use_loop(goal: str, window_title: str | None, full_screen: bool) -> Any:\n    response = send_first_request(goal)\n    while True:\n        computer_call = find_computer_call(response)\n        if computer_call is None:",
-        "detail": "openai_loop",
+        "label": "pyautogui.PAUSE",
+        "kind": 5,
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "peekOfCode": "pyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",\n    \"ENTER\": \"enter\",",
+        "detail": "win_gui_core.input",
         "documentation": {}
     },
     {
-        "label": "computer_use_loop",
-        "kind": 2,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "def computer_use_loop(goal: str, window_title: str | None, full_screen: bool) -> Any:\n    response = send_first_request(goal)\n    while True:\n        computer_call = find_computer_call(response)\n        if computer_call is None:\n            return response\n        execute_actions(field(computer_call, \"actions\", []))\n        screenshot = harness.capture_screenshot(\n            full_screen=full_screen,\n            title_regex=window_title,",
-        "detail": "openai_loop",
+        "label": "KEY_ALIASES",
+        "kind": 5,
+        "importPath": "win_gui_core.input",
+        "description": "win_gui_core.input",
+        "peekOfCode": "KEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",\n    \"ENTER\": \"enter\",\n    \"RETURN\": \"enter\",",
+        "detail": "win_gui_core.input",
+        "documentation": {}
+    },
+    {
+        "label": "LogManager",
+        "kind": 6,
+        "importPath": "win_gui_core.logs",
+        "description": "win_gui_core.logs",
+        "peekOfCode": "class LogManager:\n    def __init__(self, app_log_dir: Path, app_dump_dir: Path | None = None) -> None:\n        self.app_log_dir = app_log_dir\n        self.app_dump_dir = app_dump_dir\n    def resolve_log_path(self, filename: str | None = None) -> Path | None:\n        if filename:\n            path = self.app_log_dir / filename\n            return path if path.exists() else None\n        if not self.app_log_dir.exists():\n            return None",
+        "detail": "win_gui_core.logs",
+        "documentation": {}
+    },
+    {
+        "label": "ScreenshotManager",
+        "kind": 6,
+        "importPath": "win_gui_core.screenshots",
+        "description": "win_gui_core.screenshots",
+        "peekOfCode": "class ScreenshotManager:\n    def __init__(self, window_manager: WindowManager) -> None:\n        self.window_manager = window_manager\n    def capture(\n        self,\n        *,\n        session: TargetSession | None,\n        mode: str,\n        region: dict[str, int] | None = None,\n        embed_base64: bool = False,",
+        "detail": "win_gui_core.screenshots",
+        "documentation": {}
+    },
+    {
+        "label": "WinGuiService",
+        "kind": 6,
+        "importPath": "win_gui_core.service",
+        "description": "win_gui_core.service",
+        "peekOfCode": "class WinGuiService:\n    def __init__(self) -> None:\n        self.app_exe = os.environ.get(\"APP_EXE\", \"\")\n        self.app_workdir = os.environ.get(\"APP_WORKDIR\", \"\")\n        self.app_log_dir = Path(os.environ.get(\"APP_LOG_DIR\", \"logs\"))\n        self.app_dump_dir = Path(os.environ[\"APP_DUMP_DIR\"]) if os.environ.get(\"APP_DUMP_DIR\") else None\n        self.main_window_title_regex = os.environ.get(\"MAIN_WINDOW_TITLE_REGEX\", \".*\")\n        self.qt_dump_arg = os.environ.get(\"APP_STATE_DUMP_ARG\", \"--dump-state-json\")\n        self.qt_automation_env = os.environ.get(\"QT_AUTOMATION_ENV_VAR\", \"KLOGG_AUTOMATION\")\n        self.artifacts_root = Path.cwd() / \"artifacts\" / \"sessions\"",
+        "detail": "win_gui_core.service",
+        "documentation": {}
+    },
+    {
+        "label": "Viewport",
+        "kind": 6,
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "peekOfCode": "class Viewport:\n    mode: CaptureMode\n    left: int\n    top: int\n    width: int\n    height: int\n    hwnd: int | None\n    pid: int | None\n    title: str | None\n    monitor_index: int | None",
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "TargetSession",
+        "kind": 6,
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "peekOfCode": "class TargetSession:\n    session_id: str\n    title_regex: str | None\n    pid: int | None\n    hwnd: int | None\n    viewport: Viewport | None\n    capture_mode: CaptureMode\n    trace_path: str\n    last_screenshot_path: str | None = None\n    last_response_id: str | None = None",
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "SessionTraceEvent",
+        "kind": 6,
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "peekOfCode": "class SessionTraceEvent:\n    ts: float\n    type: str\n    data: dict[str, Any]\n    def to_dict(self) -> dict[str, Any]:\n        return {\"ts\": self.ts, \"type\": self.type, **self.data}\nclass SessionStore:\n    def __init__(self, artifacts_root: Path) -> None:\n        self._artifacts_root = artifacts_root\n        self._artifacts_root.mkdir(parents=True, exist_ok=True)",
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "SessionStore",
+        "kind": 6,
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "peekOfCode": "class SessionStore:\n    def __init__(self, artifacts_root: Path) -> None:\n        self._artifacts_root = artifacts_root\n        self._artifacts_root.mkdir(parents=True, exist_ok=True)\n        self._active: TargetSession | None = None\n    def create(\n        self,\n        *,\n        title_regex: str | None,\n        pid: int | None,",
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "CoordSpace",
+        "kind": 5,
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "peekOfCode": "CoordSpace = Literal[\"screen\", \"viewport\"]\nCaptureMode = Literal[\"full_screen\", \"window\", \"region\"]\nAdapterKind = Literal[\"qt\", \"klogg\"] | None\n@dataclass\nclass Viewport:\n    mode: CaptureMode\n    left: int\n    top: int\n    width: int\n    height: int",
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "CaptureMode",
+        "kind": 5,
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "peekOfCode": "CaptureMode = Literal[\"full_screen\", \"window\", \"region\"]\nAdapterKind = Literal[\"qt\", \"klogg\"] | None\n@dataclass\nclass Viewport:\n    mode: CaptureMode\n    left: int\n    top: int\n    width: int\n    height: int\n    hwnd: int | None",
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "AdapterKind",
+        "kind": 5,
+        "importPath": "win_gui_core.session",
+        "description": "win_gui_core.session",
+        "peekOfCode": "AdapterKind = Literal[\"qt\", \"klogg\"] | None\n@dataclass\nclass Viewport:\n    mode: CaptureMode\n    left: int\n    top: int\n    width: int\n    height: int\n    hwnd: int | None\n    pid: int | None",
+        "detail": "win_gui_core.session",
+        "documentation": {}
+    },
+    {
+        "label": "UIAutomationService",
+        "kind": 6,
+        "importPath": "win_gui_core.uia",
+        "description": "win_gui_core.uia",
+        "peekOfCode": "class UIAutomationService:\n    def __init__(self, input_controller: InputController) -> None:\n        self._desktop = Desktop(backend=\"uia\")\n        self._input = input_controller\n    def find_element(\n        self,\n        window_title_regex: str,\n        *,\n        name: str | None = None,\n        auto_id: str | None = None,",
+        "detail": "win_gui_core.uia",
+        "documentation": {}
+    },
+    {
+        "label": "WindowInfo",
+        "kind": 6,
+        "importPath": "win_gui_core.windows",
+        "description": "win_gui_core.windows",
+        "peekOfCode": "class WindowInfo:\n    hwnd: int\n    title: str\n    class_name: str\n    pid: int\n    rect: tuple[int, int, int, int]\n    visible: bool\n    def as_dict(self) -> dict[str, Any]:\n        left, top, right, bottom = self.rect\n        return {",
+        "detail": "win_gui_core.windows",
+        "documentation": {}
+    },
+    {
+        "label": "WindowManager",
+        "kind": 6,
+        "importPath": "win_gui_core.windows",
+        "description": "win_gui_core.windows",
+        "peekOfCode": "class WindowManager:\n    def __init__(self, main_window_title_regex: str) -> None:\n        self.main_window_title_regex = main_window_title_regex or \".*\"\n    def list_windows(self) -> list[dict[str, Any]]:\n        windows: list[WindowInfo] = []\n        def callback(hwnd: int, _lparam: int) -> bool:\n            try:\n                title = win32gui.GetWindowText(hwnd)\n                class_name = win32gui.GetClassName(hwnd)\n                visible = bool(win32gui.IsWindowVisible(hwnd))",
+        "detail": "win_gui_core.windows",
         "documentation": {}
     },
     {
@@ -697,52 +1483,7 @@
         "kind": 2,
         "importPath": "openai_loop",
         "description": "openai_loop",
-        "peekOfCode": "def main() -> int:\n    parser = argparse.ArgumentParser(description=\"Run an OpenAI Computer Use loop against a Windows desktop target.\")\n    parser.add_argument(\"goal\", help=\"Natural-language task for the model.\")\n    parser.add_argument(\"--window-title\", default=os.environ.get(\"MAIN_WINDOW_TITLE_REGEX\"), help=\"Regex of the target window title.\")\n    parser.add_argument(\"--full-screen\", action=\"store_true\", help=\"Capture the whole screen instead of a single window.\")\n    args = parser.parse_args()\n    final_response = computer_use_loop(args.goal, args.window_title, args.full_screen)\n    output_text = getattr(final_response, \"output_text\", None)\n    if output_text:\n        print(output_text)",
-        "detail": "openai_loop",
-        "documentation": {}
-    },
-    {
-        "label": "client",
-        "kind": 5,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "client = OpenAI()\nharness = DesktopHarness()\npyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",",
-        "detail": "openai_loop",
-        "documentation": {}
-    },
-    {
-        "label": "harness",
-        "kind": 5,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "harness = DesktopHarness()\npyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",",
-        "detail": "openai_loop",
-        "documentation": {}
-    },
-    {
-        "label": "pyautogui.FAILSAFE",
-        "kind": 5,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "pyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",",
-        "detail": "openai_loop",
-        "documentation": {}
-    },
-    {
-        "label": "pyautogui.PAUSE",
-        "kind": 5,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "pyautogui.PAUSE = 0.03\nKEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",\n    \"ENTER\": \"enter\",",
-        "detail": "openai_loop",
-        "documentation": {}
-    },
-    {
-        "label": "KEY_ALIASES",
-        "kind": 5,
-        "importPath": "openai_loop",
-        "description": "openai_loop",
-        "peekOfCode": "KEY_ALIASES = {\n    \"CTRL\": \"ctrl\",\n    \"CONTROL\": \"ctrl\",\n    \"SHIFT\": \"shift\",\n    \"ALT\": \"alt\",\n    \"META\": \"win\",\n    \"CMD\": \"win\",\n    \"SUPER\": \"win\",\n    \"ENTER\": \"enter\",\n    \"RETURN\": \"enter\",",
+        "peekOfCode": "def main() -> int:\n    parser = argparse.ArgumentParser(description=\"Run an OpenAI Computer Use loop against a Windows desktop target.\")\n    parser.add_argument(\"goal\", help=\"Natural-language task for the model.\")\n    parser.add_argument(\"--window-title\", default=None, help=\"Regex of the target window title.\")\n    parser.add_argument(\"--full-screen\", action=\"store_true\", help=\"Capture the whole screen instead of a single window.\")\n    args = parser.parse_args()\n    final_response = ComputerUseRunner().run(goal=args.goal, window_title=args.window_title, full_screen=args.full_screen)\n    output_text = getattr(final_response, \"output_text\", None)\n    if output_text:\n        print(output_text)",
         "detail": "openai_loop",
         "documentation": {}
     },
@@ -751,7 +1492,7 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def ping() -> dict:\n    return {\"ok\": True, \"message\": \"win-gui MCP is alive\"}\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None) -> dict:\n    \"\"\"Close the configured app (or a specific pid).\"\"\"\n    return harness.close_app(pid=pid)",
+        "peekOfCode": "def ping() -> dict:\n    \"\"\"Check whether the Windows GUI MCP server is responsive.\"\"\"\n    return service.ping()\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured application with optional extra arguments.\"\"\"\n    return service.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None, timeout_sec: float = 10.0) -> dict:\n    \"\"\"Close the configured application or an explicit process tree.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
@@ -760,7 +1501,7 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None) -> dict:\n    \"\"\"Close the configured app (or a specific pid).\"\"\"\n    return harness.close_app(pid=pid)\n@mcp.tool\ndef restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured app.\"\"\"",
+        "peekOfCode": "def launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured application with optional extra arguments.\"\"\"\n    return service.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None, timeout_sec: float = 10.0) -> dict:\n    \"\"\"Close the configured application or an explicit process tree.\"\"\"\n    return service.close_app(pid=pid, timeout_sec=timeout_sec)\n@mcp.tool\ndef restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured application.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
@@ -769,7 +1510,7 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def close_app(pid: int | None = None) -> dict:\n    \"\"\"Close the configured app (or a specific pid).\"\"\"\n    return harness.close_app(pid=pid)\n@mcp.tool\ndef restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured app.\"\"\"\n    return harness.restart_app(args=args)\n@mcp.tool\ndef list_windows() -> list[dict]:\n    \"\"\"List top-level windows visible to the current desktop session.\"\"\"",
+        "peekOfCode": "def close_app(pid: int | None = None, timeout_sec: float = 10.0) -> dict:\n    \"\"\"Close the configured application or an explicit process tree.\"\"\"\n    return service.close_app(pid=pid, timeout_sec=timeout_sec)\n@mcp.tool\ndef restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured application.\"\"\"\n    return service.restart_app(args=args)\n@mcp.tool\ndef create_session(title_regex: str | None = None, pid: int | None = None, adapter: str | None = None, capture_mode: str = \"window\") -> dict:\n    \"\"\"Create or attach an active automation session for a window, region, or the full desktop.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
@@ -778,43 +1519,70 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured app.\"\"\"\n    return harness.restart_app(args=args)\n@mcp.tool\ndef list_windows() -> list[dict]:\n    \"\"\"List top-level windows visible to the current desktop session.\"\"\"\n    return harness.list_windows()\n@mcp.tool\ndef wait_main_window(title_regex: str | None = None, timeout_sec: float = 20.0, pid: int | None = None) -> dict:\n    \"\"\"Wait until a visible top-level window matches the regex.\"\"\"",
+        "peekOfCode": "def restart_app(args: list[str] | None = None) -> dict:\n    \"\"\"Restart the configured application.\"\"\"\n    return service.restart_app(args=args)\n@mcp.tool\ndef create_session(title_regex: str | None = None, pid: int | None = None, adapter: str | None = None, capture_mode: str = \"window\") -> dict:\n    \"\"\"Create or attach an active automation session for a window, region, or the full desktop.\"\"\"\n    return service.create_session(title_regex=title_regex, pid=pid, adapter=adapter, capture_mode=capture_mode)\n@mcp.tool\ndef get_session() -> dict:\n    \"\"\"Return the active session metadata, including the last viewport and artifact paths.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "list_windows",
+        "label": "create_session",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def list_windows() -> list[dict]:\n    \"\"\"List top-level windows visible to the current desktop session.\"\"\"\n    return harness.list_windows()\n@mcp.tool\ndef wait_main_window(title_regex: str | None = None, timeout_sec: float = 20.0, pid: int | None = None) -> dict:\n    \"\"\"Wait until a visible top-level window matches the regex.\"\"\"\n    return harness.wait_main_window(title_regex=title_regex, timeout_sec=timeout_sec, pid=pid)\n@mcp.tool\ndef focus_window(hwnd: int) -> dict:\n    \"\"\"Bring a window to foreground.\"\"\"",
+        "peekOfCode": "def create_session(title_regex: str | None = None, pid: int | None = None, adapter: str | None = None, capture_mode: str = \"window\") -> dict:\n    \"\"\"Create or attach an active automation session for a window, region, or the full desktop.\"\"\"\n    return service.create_session(title_regex=title_regex, pid=pid, adapter=adapter, capture_mode=capture_mode)\n@mcp.tool\ndef get_session() -> dict:\n    \"\"\"Return the active session metadata, including the last viewport and artifact paths.\"\"\"\n    return service.get_session()\n@mcp.tool\ndef refresh_session() -> dict:\n    \"\"\"Refresh the active session by rebinding the target HWND and PID when needed.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "wait_main_window",
+        "label": "get_session",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def wait_main_window(title_regex: str | None = None, timeout_sec: float = 20.0, pid: int | None = None) -> dict:\n    \"\"\"Wait until a visible top-level window matches the regex.\"\"\"\n    return harness.wait_main_window(title_regex=title_regex, timeout_sec=timeout_sec, pid=pid)\n@mcp.tool\ndef focus_window(hwnd: int) -> dict:\n    \"\"\"Bring a window to foreground.\"\"\"\n    return harness.focus_window(hwnd=hwnd)\n@mcp.tool\ndef move_window(hwnd: int, x: int, y: int, width: int, height: int) -> dict:\n    \"\"\"Move/resize a window using Win32, not by dragging the title bar.\"\"\"",
+        "peekOfCode": "def get_session() -> dict:\n    \"\"\"Return the active session metadata, including the last viewport and artifact paths.\"\"\"\n    return service.get_session()\n@mcp.tool\ndef refresh_session() -> dict:\n    \"\"\"Refresh the active session by rebinding the target HWND and PID when needed.\"\"\"\n    return service.refresh_session()\n@mcp.tool\ndef close_session() -> dict:\n    \"\"\"Close the active automation session without terminating the target application.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "focus_window",
+        "label": "refresh_session",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def focus_window(hwnd: int) -> dict:\n    \"\"\"Bring a window to foreground.\"\"\"\n    return harness.focus_window(hwnd=hwnd)\n@mcp.tool\ndef move_window(hwnd: int, x: int, y: int, width: int, height: int) -> dict:\n    \"\"\"Move/resize a window using Win32, not by dragging the title bar.\"\"\"\n    return harness.move_window(hwnd=hwnd, x=x, y=y, width=width, height=height)\n@mcp.tool\ndef capture_screenshot(\n    full_screen: bool = False,",
+        "peekOfCode": "def refresh_session() -> dict:\n    \"\"\"Refresh the active session by rebinding the target HWND and PID when needed.\"\"\"\n    return service.refresh_session()\n@mcp.tool\ndef close_session() -> dict:\n    \"\"\"Close the active automation session without terminating the target application.\"\"\"\n    return service.close_session()\n@mcp.tool\ndef enumerate_monitors() -> dict:\n    \"\"\"List the connected monitors and their desktop bounds.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "move_window",
+        "label": "close_session",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def move_window(hwnd: int, x: int, y: int, width: int, height: int) -> dict:\n    \"\"\"Move/resize a window using Win32, not by dragging the title bar.\"\"\"\n    return harness.move_window(hwnd=hwnd, x=x, y=y, width=width, height=height)\n@mcp.tool\ndef capture_screenshot(\n    full_screen: bool = False,\n    hwnd: int | None = None,\n    title_regex: str | None = None,\n    embed_base64: bool = False,\n) -> dict:",
+        "peekOfCode": "def close_session() -> dict:\n    \"\"\"Close the active automation session without terminating the target application.\"\"\"\n    return service.close_session()\n@mcp.tool\ndef enumerate_monitors() -> dict:\n    \"\"\"List the connected monitors and their desktop bounds.\"\"\"\n    return service.enumerate_monitors()\n@mcp.tool\ndef restore_window(hwnd: int | None = None) -> dict:\n    \"\"\"Restore and foreground the session window or an explicit HWND.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "enumerate_monitors",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def enumerate_monitors() -> dict:\n    \"\"\"List the connected monitors and their desktop bounds.\"\"\"\n    return service.enumerate_monitors()\n@mcp.tool\ndef restore_window(hwnd: int | None = None) -> dict:\n    \"\"\"Restore and foreground the session window or an explicit HWND.\"\"\"\n    return service.restore_window(hwnd=hwnd)\n@mcp.tool\ndef wait_window_stable(timeout_sec: float = 5.0) -> dict:\n    \"\"\"Wait until the active session window stops moving or recreating.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "restore_window",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def restore_window(hwnd: int | None = None) -> dict:\n    \"\"\"Restore and foreground the session window or an explicit HWND.\"\"\"\n    return service.restore_window(hwnd=hwnd)\n@mcp.tool\ndef wait_window_stable(timeout_sec: float = 5.0) -> dict:\n    \"\"\"Wait until the active session window stops moving or recreating.\"\"\"\n    return service.wait_window_stable(timeout_sec=timeout_sec)\n@mcp.tool\ndef capture_screenshot(mode: str = \"window\", region: dict | None = None, embed_base64: bool = False) -> dict:\n    \"\"\"Capture a screenshot for the active session mode and return full viewport metadata.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "wait_window_stable",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def wait_window_stable(timeout_sec: float = 5.0) -> dict:\n    \"\"\"Wait until the active session window stops moving or recreating.\"\"\"\n    return service.wait_window_stable(timeout_sec=timeout_sec)\n@mcp.tool\ndef capture_screenshot(mode: str = \"window\", region: dict | None = None, embed_base64: bool = False) -> dict:\n    \"\"\"Capture a screenshot for the active session mode and return full viewport metadata.\"\"\"\n    return service.capture_screenshot(mode=mode, region=region, embed_base64=embed_base64)\n@mcp.tool\ndef capture_region(\n    x: int,",
         "detail": "server",
         "documentation": {}
     },
@@ -823,52 +1591,52 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def capture_screenshot(\n    full_screen: bool = False,\n    hwnd: int | None = None,\n    title_regex: str | None = None,\n    embed_base64: bool = False,\n) -> dict:\n    \"\"\"Capture the full screen or a single window. Set embed_base64=true when the model needs pixels inline.\"\"\"\n    return harness.capture_screenshot(\n        full_screen=full_screen,\n        hwnd=hwnd,",
+        "peekOfCode": "def capture_screenshot(mode: str = \"window\", region: dict | None = None, embed_base64: bool = False) -> dict:\n    \"\"\"Capture a screenshot for the active session mode and return full viewport metadata.\"\"\"\n    return service.capture_screenshot(mode=mode, region=region, embed_base64=embed_base64)\n@mcp.tool\ndef capture_region(\n    x: int,\n    y: int,\n    width: int,\n    height: int,\n    absolute: bool = True,",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "click_xy",
+        "label": "capture_region",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def click_xy(x: int, y: int, button: str = \"left\", absolute: bool = True, hwnd: int | None = None) -> dict:\n    \"\"\"Click at absolute screen coordinates or window-relative coordinates.\"\"\"\n    return harness.click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)\n@mcp.tool\ndef double_click_xy(x: int, y: int, button: str = \"left\", absolute: bool = True, hwnd: int | None = None) -> dict:\n    \"\"\"Double-click at absolute screen coordinates or window-relative coordinates.\"\"\"\n    return harness.double_click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)\n@mcp.tool\ndef drag_mouse(\n    x1: int,",
+        "peekOfCode": "def capture_region(\n    x: int,\n    y: int,\n    width: int,\n    height: int,\n    absolute: bool = True,\n    hwnd: int | None = None,\n    embed_base64: bool = False,\n) -> dict:\n    \"\"\"Capture an explicit region in screen coordinates or relative to the active viewport.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "double_click_xy",
+        "label": "click_point",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def double_click_xy(x: int, y: int, button: str = \"left\", absolute: bool = True, hwnd: int | None = None) -> dict:\n    \"\"\"Double-click at absolute screen coordinates or window-relative coordinates.\"\"\"\n    return harness.double_click_xy(x=x, y=y, button=button, absolute=absolute, hwnd=hwnd)\n@mcp.tool\ndef drag_mouse(\n    x1: int,\n    y1: int,\n    x2: int,\n    y2: int,\n    absolute: bool = True,",
+        "peekOfCode": "def click_point(x: int, y: int, coord_space: str = \"viewport\", button: str = \"left\") -> dict:\n    \"\"\"Click a point in viewport or desktop coordinates.\"\"\"\n    return service.click_point(x=x, y=y, coord_space=coord_space, button=button)\n@mcp.tool\ndef double_click_point(x: int, y: int, coord_space: str = \"viewport\", button: str = \"left\") -> dict:\n    \"\"\"Double-click a point in viewport or desktop coordinates.\"\"\"\n    return service.double_click_point(x=x, y=y, coord_space=coord_space, button=button)\n@mcp.tool\ndef drag_path(path: list[dict], coord_space: str = \"viewport\", button: str = \"left\") -> dict:\n    \"\"\"Drag along a point path expressed in viewport or desktop coordinates.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "drag_mouse",
+        "label": "double_click_point",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def drag_mouse(\n    x1: int,\n    y1: int,\n    x2: int,\n    y2: int,\n    absolute: bool = True,\n    hwnd: int | None = None,\n    duration: float = 0.25,\n    button: str = \"left\",\n) -> dict:",
+        "peekOfCode": "def double_click_point(x: int, y: int, coord_space: str = \"viewport\", button: str = \"left\") -> dict:\n    \"\"\"Double-click a point in viewport or desktop coordinates.\"\"\"\n    return service.double_click_point(x=x, y=y, coord_space=coord_space, button=button)\n@mcp.tool\ndef drag_path(path: list[dict], coord_space: str = \"viewport\", button: str = \"left\") -> dict:\n    \"\"\"Drag along a point path expressed in viewport or desktop coordinates.\"\"\"\n    return service.drag_path(path=path, coord_space=coord_space, button=button)\n@mcp.tool\ndef scroll_at(clicks: int, x: int | None = None, y: int | None = None, coord_space: str = \"viewport\") -> dict:\n    \"\"\"Scroll at a viewport-relative or desktop-relative point.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "move_mouse",
+        "label": "drag_path",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def move_mouse(x: int, y: int) -> dict:\n    \"\"\"Move the mouse cursor to absolute screen coordinates.\"\"\"\n    return harness.move_mouse(x=x, y=y)\n@mcp.tool\ndef scroll(clicks: int, x: int | None = None, y: int | None = None) -> dict:\n    \"\"\"Scroll the wheel; positive is up, negative is down.\"\"\"\n    return harness.scroll(clicks=clicks, x=x, y=y)\n@mcp.tool\ndef type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"",
+        "peekOfCode": "def drag_path(path: list[dict], coord_space: str = \"viewport\", button: str = \"left\") -> dict:\n    \"\"\"Drag along a point path expressed in viewport or desktop coordinates.\"\"\"\n    return service.drag_path(path=path, coord_space=coord_space, button=button)\n@mcp.tool\ndef scroll_at(clicks: int, x: int | None = None, y: int | None = None, coord_space: str = \"viewport\") -> dict:\n    \"\"\"Scroll at a viewport-relative or desktop-relative point.\"\"\"\n    return service.scroll_at(clicks=clicks, x=x, y=y, coord_space=coord_space)\n@mcp.tool\ndef type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "scroll",
+        "label": "scroll_at",
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def scroll(clicks: int, x: int | None = None, y: int | None = None) -> dict:\n    \"\"\"Scroll the wheel; positive is up, negative is down.\"\"\"\n    return harness.scroll(clicks=clicks, x=x, y=y)\n@mcp.tool\ndef type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"\n    return harness.type_text(text=text, interval=interval)\n@mcp.tool\ndef send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut such as [\\\"ctrl\\\", \\\"shift\\\", \\\"p\\\"].\"\"\"",
+        "peekOfCode": "def scroll_at(clicks: int, x: int | None = None, y: int | None = None, coord_space: str = \"viewport\") -> dict:\n    \"\"\"Scroll at a viewport-relative or desktop-relative point.\"\"\"\n    return service.scroll_at(clicks=clicks, x=x, y=y, coord_space=coord_space)\n@mcp.tool\ndef type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"\n    return service.type_text(text=text, interval=interval)\n@mcp.tool\ndef send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut expressed as a list of key names.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
@@ -877,7 +1645,7 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"\n    return harness.type_text(text=text, interval=interval)\n@mcp.tool\ndef send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut such as [\\\"ctrl\\\", \\\"shift\\\", \\\"p\\\"].\"\"\"\n    return harness.send_hotkey(*keys)\n@mcp.tool\ndef find_element(\n    window_title_regex: str,",
+        "peekOfCode": "def type_text(text: str, interval: float = 0.01) -> dict:\n    \"\"\"Type text into the currently focused control.\"\"\"\n    return service.type_text(text=text, interval=interval)\n@mcp.tool\ndef send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut expressed as a list of key names.\"\"\"\n    return service.send_hotkey(keys=keys)\n@mcp.tool\ndef find_element(\n    window_title_regex: str,",
         "detail": "server",
         "documentation": {}
     },
@@ -886,7 +1654,7 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut such as [\\\"ctrl\\\", \\\"shift\\\", \\\"p\\\"].\"\"\"\n    return harness.send_hotkey(*keys)\n@mcp.tool\ndef find_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,",
+        "peekOfCode": "def send_hotkey(keys: list[str]) -> dict:\n    \"\"\"Press a keyboard shortcut expressed as a list of key names.\"\"\"\n    return service.send_hotkey(keys=keys)\n@mcp.tool\ndef find_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,",
         "detail": "server",
         "documentation": {}
     },
@@ -895,7 +1663,34 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def find_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Find a UIA element in the target window.\"\"\"\n    return harness.find_element(",
+        "peekOfCode": "def find_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Find a UIA element in a target window by text, automation id, or control type.\"\"\"\n    return service.find_element(",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "wait_for_element",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def wait_for_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Wait until a UIA element becomes available.\"\"\"\n    return service.wait_for_element(",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "wait_for_element_gone",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def wait_for_element_gone(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Wait until a UIA element is no longer present.\"\"\"\n    return service.wait_for_element_gone(",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "assert_element",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def assert_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Assert that a UIA element is present.\"\"\"\n    return service.assert_element(",
         "detail": "server",
         "documentation": {}
     },
@@ -904,7 +1699,43 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def click_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n    button: str = \"left\",\n) -> dict:\n    \"\"\"Click a UIA element by name, automation id, or control type.\"\"\"",
+        "peekOfCode": "def click_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n    button: str = \"left\",\n) -> dict:\n    \"\"\"Click a UIA element.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "double_click_element",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def double_click_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Double-click a UIA element.\"\"\"\n    return service.double_click_element(",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "right_click_element",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def right_click_element(\n    window_title_regex: str,\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,\n) -> dict:\n    \"\"\"Right-click a UIA element.\"\"\"\n    return service.right_click_element(",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "drag_element_to_point",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def drag_element_to_point(\n    window_title_regex: str,\n    x: int,\n    y: int,\n    coord_space: str = \"viewport\",\n    name: str | None = None,\n    auto_id: str | None = None,\n    control_type: str | None = None,\n    found_index: int = 0,\n    timeout_sec: float = 2.0,",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "drag_element_to_element",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def drag_element_to_element(source: dict, target: dict) -> dict:\n    \"\"\"Drag one UIA element onto another UIA element.\"\"\"\n    return service.drag_element_to_element(source=source, target=target)\n@mcp.tool\ndef get_uia_tree(window_title_regex: str, max_depth: int = 3, max_children_per_node: int = 50) -> dict:\n    \"\"\"Serialize part of the UIA tree for a target window.\"\"\"\n    return service.get_uia_tree(window_title_regex=window_title_regex, max_depth=max_depth, max_children_per_node=max_children_per_node)\n@mcp.tool\ndef assert_window_title(window_title_regex: str, expected_pattern: str) -> dict:\n    \"\"\"Assert that a target window title matches a regular expression.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
@@ -913,7 +1744,25 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def get_uia_tree(window_title_regex: str, max_depth: int = 3, max_children_per_node: int = 50) -> dict:\n    \"\"\"Serialize part of the UIA tree for a target window.\"\"\"\n    return harness.get_uia_tree(\n        window_title_regex=window_title_regex,\n        max_depth=max_depth,\n        max_children_per_node=max_children_per_node,\n    )\n@mcp.tool\ndef tail_log(filename: str | None = None, lines: int = 200) -> dict:\n    \"\"\"Read the last N lines from the newest log or a specific log file.\"\"\"",
+        "peekOfCode": "def get_uia_tree(window_title_regex: str, max_depth: int = 3, max_children_per_node: int = 50) -> dict:\n    \"\"\"Serialize part of the UIA tree for a target window.\"\"\"\n    return service.get_uia_tree(window_title_regex=window_title_regex, max_depth=max_depth, max_children_per_node=max_children_per_node)\n@mcp.tool\ndef assert_window_title(window_title_regex: str, expected_pattern: str) -> dict:\n    \"\"\"Assert that a target window title matches a regular expression.\"\"\"\n    return service.assert_window_title(window_title_regex=window_title_regex, expected_pattern=expected_pattern)\n@mcp.tool\ndef assert_status_text(window_title_regex: str, expected_text: str, timeout_sec: float = 2.0) -> dict:\n    \"\"\"Assert that a target window exposes status text containing the expected substring.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "assert_window_title",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def assert_window_title(window_title_regex: str, expected_pattern: str) -> dict:\n    \"\"\"Assert that a target window title matches a regular expression.\"\"\"\n    return service.assert_window_title(window_title_regex=window_title_regex, expected_pattern=expected_pattern)\n@mcp.tool\ndef assert_status_text(window_title_regex: str, expected_text: str, timeout_sec: float = 2.0) -> dict:\n    \"\"\"Assert that a target window exposes status text containing the expected substring.\"\"\"\n    return service.assert_status_text(window_title_regex=window_title_regex, expected_text=expected_text, timeout_sec=timeout_sec)\n@mcp.tool\ndef tail_log(filename: str | None = None, lines: int = 200) -> dict:\n    \"\"\"Read the last lines from the newest log or a named log file.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "assert_status_text",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def assert_status_text(window_title_regex: str, expected_text: str, timeout_sec: float = 2.0) -> dict:\n    \"\"\"Assert that a target window exposes status text containing the expected substring.\"\"\"\n    return service.assert_status_text(window_title_regex=window_title_regex, expected_text=expected_text, timeout_sec=timeout_sec)\n@mcp.tool\ndef tail_log(filename: str | None = None, lines: int = 200) -> dict:\n    \"\"\"Read the last lines from the newest log or a named log file.\"\"\"\n    return service.tail_log(filename=filename, lines=lines)\n@mcp.tool\ndef assert_log_contains(expected_text: str, filename: str | None = None, lines: int = 400) -> dict:\n    \"\"\"Assert that the newest or named log contains the expected text.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
@@ -922,7 +1771,16 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def tail_log(filename: str | None = None, lines: int = 200) -> dict:\n    \"\"\"Read the last N lines from the newest log or a specific log file.\"\"\"\n    return harness.tail_log(filename=filename, lines=lines)\n@mcp.tool\ndef collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:\n    \"\"\"Copy recently modified logs into an artifacts directory.\"\"\"\n    return harness.collect_recent_logs(minutes=minutes, output_dir=output_dir)\nif __name__ == \"__main__\":\n    mcp.run()",
+        "peekOfCode": "def tail_log(filename: str | None = None, lines: int = 200) -> dict:\n    \"\"\"Read the last lines from the newest log or a named log file.\"\"\"\n    return service.tail_log(filename=filename, lines=lines)\n@mcp.tool\ndef assert_log_contains(expected_text: str, filename: str | None = None, lines: int = 400) -> dict:\n    \"\"\"Assert that the newest or named log contains the expected text.\"\"\"\n    return service.assert_log_contains(expected_text=expected_text, filename=filename, lines=lines)\n@mcp.tool\ndef collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:\n    \"\"\"Copy recently modified logs while preserving their relative directory structure.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "assert_log_contains",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def assert_log_contains(expected_text: str, filename: str | None = None, lines: int = 400) -> dict:\n    \"\"\"Assert that the newest or named log contains the expected text.\"\"\"\n    return service.assert_log_contains(expected_text=expected_text, filename=filename, lines=lines)\n@mcp.tool\ndef collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:\n    \"\"\"Copy recently modified logs while preserving their relative directory structure.\"\"\"\n    return service.collect_recent_logs(minutes=minutes, output_dir=output_dir)\n@mcp.tool\ndef wait_process_idle(pid: int | None = None, cpu_threshold: float = 2.0, timeout_sec: float = 10.0) -> dict:\n    \"\"\"Wait until a process tree becomes mostly idle.\"\"\"",
         "detail": "server",
         "documentation": {}
     },
@@ -931,7 +1789,169 @@
         "kind": 2,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "def collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:\n    \"\"\"Copy recently modified logs into an artifacts directory.\"\"\"\n    return harness.collect_recent_logs(minutes=minutes, output_dir=output_dir)\nif __name__ == \"__main__\":\n    mcp.run()",
+        "peekOfCode": "def collect_recent_logs(minutes: int = 120, output_dir: str | None = None) -> dict:\n    \"\"\"Copy recently modified logs while preserving their relative directory structure.\"\"\"\n    return service.collect_recent_logs(minutes=minutes, output_dir=output_dir)\n@mcp.tool\ndef wait_process_idle(pid: int | None = None, cpu_threshold: float = 2.0, timeout_sec: float = 10.0) -> dict:\n    \"\"\"Wait until a process tree becomes mostly idle.\"\"\"\n    return service.wait_process_idle(pid=pid, cpu_threshold=cpu_threshold, timeout_sec=timeout_sec)\n@mcp.tool\ndef create_artifact_bundle(reason: str | None = None) -> dict:\n    \"\"\"Collect screenshots, traces, logs, dumps, and state snapshots into a bundle.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "wait_process_idle",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def wait_process_idle(pid: int | None = None, cpu_threshold: float = 2.0, timeout_sec: float = 10.0) -> dict:\n    \"\"\"Wait until a process tree becomes mostly idle.\"\"\"\n    return service.wait_process_idle(pid=pid, cpu_threshold=cpu_threshold, timeout_sec=timeout_sec)\n@mcp.tool\ndef create_artifact_bundle(reason: str | None = None) -> dict:\n    \"\"\"Collect screenshots, traces, logs, dumps, and state snapshots into a bundle.\"\"\"\n    return service.create_artifact_bundle(reason=reason)\n@mcp.tool\ndef list_artifacts() -> dict:\n    \"\"\"List the stored session artifact directories.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "create_artifact_bundle",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def create_artifact_bundle(reason: str | None = None) -> dict:\n    \"\"\"Collect screenshots, traces, logs, dumps, and state snapshots into a bundle.\"\"\"\n    return service.create_artifact_bundle(reason=reason)\n@mcp.tool\ndef list_artifacts() -> dict:\n    \"\"\"List the stored session artifact directories.\"\"\"\n    return service.list_artifacts()\n@mcp.tool\ndef collect_event_logs(minutes: int = 60, output_dir: str | None = None) -> dict:\n    \"\"\"Collect recent Windows Application event log entries.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "list_artifacts",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def list_artifacts() -> dict:\n    \"\"\"List the stored session artifact directories.\"\"\"\n    return service.list_artifacts()\n@mcp.tool\ndef collect_event_logs(minutes: int = 60, output_dir: str | None = None) -> dict:\n    \"\"\"Collect recent Windows Application event log entries.\"\"\"\n    return service.collect_event_logs(minutes=minutes, output_dir=output_dir)\n@mcp.tool\ndef collect_dumps(output_dir: str | None = None) -> dict:\n    \"\"\"Collect crash dumps from the configured dump directory.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "collect_event_logs",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def collect_event_logs(minutes: int = 60, output_dir: str | None = None) -> dict:\n    \"\"\"Collect recent Windows Application event log entries.\"\"\"\n    return service.collect_event_logs(minutes=minutes, output_dir=output_dir)\n@mcp.tool\ndef collect_dumps(output_dir: str | None = None) -> dict:\n    \"\"\"Collect crash dumps from the configured dump directory.\"\"\"\n    return service.collect_dumps(output_dir=output_dir)\n@mcp.tool\ndef get_process_tree(pid: int | None = None) -> dict:\n    \"\"\"Return the target process tree rooted at the session PID or an explicit PID.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "collect_dumps",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def collect_dumps(output_dir: str | None = None) -> dict:\n    \"\"\"Collect crash dumps from the configured dump directory.\"\"\"\n    return service.collect_dumps(output_dir=output_dir)\n@mcp.tool\ndef get_process_tree(pid: int | None = None) -> dict:\n    \"\"\"Return the target process tree rooted at the session PID or an explicit PID.\"\"\"\n    return service.get_process_tree(pid=pid)\n@mcp.tool\ndef dump_qt_state() -> dict:\n    \"\"\"Run the target application's Qt state dump endpoint and return the parsed JSON.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "get_process_tree",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def get_process_tree(pid: int | None = None) -> dict:\n    \"\"\"Return the target process tree rooted at the session PID or an explicit PID.\"\"\"\n    return service.get_process_tree(pid=pid)\n@mcp.tool\ndef dump_qt_state() -> dict:\n    \"\"\"Run the target application's Qt state dump endpoint and return the parsed JSON.\"\"\"\n    return service.dump_qt_state()\n@mcp.tool\ndef find_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:\n    \"\"\"Find an instrumented Qt object by objectName, accessibleName, or role.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "dump_qt_state",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def dump_qt_state() -> dict:\n    \"\"\"Run the target application's Qt state dump endpoint and return the parsed JSON.\"\"\"\n    return service.dump_qt_state()\n@mcp.tool\ndef find_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:\n    \"\"\"Find an instrumented Qt object by objectName, accessibleName, or role.\"\"\"\n    return service.find_qt_object(object_name=object_name, accessible_name=accessible_name, role=role)\n@mcp.tool\ndef click_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt object intended for click-style interaction.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "find_qt_object",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def find_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:\n    \"\"\"Find an instrumented Qt object by objectName, accessibleName, or role.\"\"\"\n    return service.find_qt_object(object_name=object_name, accessible_name=accessible_name, role=role)\n@mcp.tool\ndef click_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt object intended for click-style interaction.\"\"\"\n    return service.click_qt_object(object_name=object_name, accessible_name=accessible_name, role=role)\n@mcp.tool\ndef invoke_qt_action(action_name: str) -> dict:\n    \"\"\"Resolve an instrumented Qt action by name.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "click_qt_object",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def click_qt_object(object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt object intended for click-style interaction.\"\"\"\n    return service.click_qt_object(object_name=object_name, accessible_name=accessible_name, role=role)\n@mcp.tool\ndef invoke_qt_action(action_name: str) -> dict:\n    \"\"\"Resolve an instrumented Qt action by name.\"\"\"\n    return service.invoke_qt_action(action_name=action_name)\n@mcp.tool\ndef set_qt_value(value: str, object_name: str | None = None, accessible_name: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt value-bearing control.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "invoke_qt_action",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def invoke_qt_action(action_name: str) -> dict:\n    \"\"\"Resolve an instrumented Qt action by name.\"\"\"\n    return service.invoke_qt_action(action_name=action_name)\n@mcp.tool\ndef set_qt_value(value: str, object_name: str | None = None, accessible_name: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt value-bearing control.\"\"\"\n    return service.set_qt_value(value=value, object_name=object_name, accessible_name=accessible_name)\n@mcp.tool\ndef toggle_qt_control(object_name: str | None = None, accessible_name: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt toggle control.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "set_qt_value",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def set_qt_value(value: str, object_name: str | None = None, accessible_name: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt value-bearing control.\"\"\"\n    return service.set_qt_value(value=value, object_name=object_name, accessible_name=accessible_name)\n@mcp.tool\ndef toggle_qt_control(object_name: str | None = None, accessible_name: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt toggle control.\"\"\"\n    return service.toggle_qt_control(object_name=object_name, accessible_name=accessible_name)\n@mcp.tool\ndef klogg_open_log(path: str) -> dict:\n    \"\"\"Prepare an instrumented klogg instance to open a log file.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "toggle_qt_control",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def toggle_qt_control(object_name: str | None = None, accessible_name: str | None = None) -> dict:\n    \"\"\"Resolve an instrumented Qt toggle control.\"\"\"\n    return service.toggle_qt_control(object_name=object_name, accessible_name=accessible_name)\n@mcp.tool\ndef klogg_open_log(path: str) -> dict:\n    \"\"\"Prepare an instrumented klogg instance to open a log file.\"\"\"\n    return service.klogg_open_log(path=path)\n@mcp.tool\ndef klogg_search(text: str, regex: bool = False, case_sensitive: bool = False) -> dict:\n    \"\"\"Execute or describe a klogg search request.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "klogg_open_log",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def klogg_open_log(path: str) -> dict:\n    \"\"\"Prepare an instrumented klogg instance to open a log file.\"\"\"\n    return service.klogg_open_log(path=path)\n@mcp.tool\ndef klogg_search(text: str, regex: bool = False, case_sensitive: bool = False) -> dict:\n    \"\"\"Execute or describe a klogg search request.\"\"\"\n    return service.klogg_search(text=text, regex=regex, case_sensitive=case_sensitive)\n@mcp.tool\ndef klogg_get_state() -> dict:\n    \"\"\"Return the normalized instrumented klogg state snapshot.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "klogg_search",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def klogg_search(text: str, regex: bool = False, case_sensitive: bool = False) -> dict:\n    \"\"\"Execute or describe a klogg search request.\"\"\"\n    return service.klogg_search(text=text, regex=regex, case_sensitive=case_sensitive)\n@mcp.tool\ndef klogg_get_state() -> dict:\n    \"\"\"Return the normalized instrumented klogg state snapshot.\"\"\"\n    return service.klogg_get_state()\n@mcp.tool\ndef klogg_get_active_tab() -> dict:\n    \"\"\"Return the current klogg tab metadata.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "klogg_get_state",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def klogg_get_state() -> dict:\n    \"\"\"Return the normalized instrumented klogg state snapshot.\"\"\"\n    return service.klogg_get_state()\n@mcp.tool\ndef klogg_get_active_tab() -> dict:\n    \"\"\"Return the current klogg tab metadata.\"\"\"\n    return service.klogg_get_active_tab()\n@mcp.tool\ndef klogg_toggle_follow(enabled: bool | None = None) -> dict:\n    \"\"\"Toggle or set klogg follow mode.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "klogg_get_active_tab",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def klogg_get_active_tab() -> dict:\n    \"\"\"Return the current klogg tab metadata.\"\"\"\n    return service.klogg_get_active_tab()\n@mcp.tool\ndef klogg_toggle_follow(enabled: bool | None = None) -> dict:\n    \"\"\"Toggle or set klogg follow mode.\"\"\"\n    return service.klogg_toggle_follow(enabled=enabled)\n@mcp.tool\ndef klogg_get_visible_range() -> dict:\n    \"\"\"Return the visible klogg line range.\"\"\"",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "klogg_toggle_follow",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def klogg_toggle_follow(enabled: bool | None = None) -> dict:\n    \"\"\"Toggle or set klogg follow mode.\"\"\"\n    return service.klogg_toggle_follow(enabled=enabled)\n@mcp.tool\ndef klogg_get_visible_range() -> dict:\n    \"\"\"Return the visible klogg line range.\"\"\"\n    return service.klogg_get_visible_range()\nif __name__ == \"__main__\":\n    mcp.run()",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "klogg_get_visible_range",
+        "kind": 2,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "def klogg_get_visible_range() -> dict:\n    \"\"\"Return the visible klogg line range.\"\"\"\n    return service.klogg_get_visible_range()\nif __name__ == \"__main__\":\n    mcp.run()",
         "detail": "server",
         "documentation": {}
     },
@@ -940,53 +1960,17 @@
         "kind": 5,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "mcp = FastMCP(\"win-gui\")\nharness = DesktopHarness()\n@mcp.tool\ndef ping() -> dict:\n    return {\"ok\": True, \"message\": \"win-gui MCP is alive\"}\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool",
+        "peekOfCode": "mcp = FastMCP(\"win-gui\")\nservice = WinGuiService()\n@mcp.tool\ndef ping() -> dict:\n    \"\"\"Check whether the Windows GUI MCP server is responsive.\"\"\"\n    return service.ping()\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured application with optional extra arguments.\"\"\"\n    return service.launch_app(args=args)",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "harness",
+        "label": "service",
         "kind": 5,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "harness = DesktopHarness()\n@mcp.tool\ndef ping() -> dict:\n    return {\"ok\": True, \"message\": \"win-gui MCP is alive\"}\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured Windows GUI application.\"\"\"\n    return harness.launch_app(args=args)\n@mcp.tool\ndef close_app(pid: int | None = None) -> dict:",
+        "peekOfCode": "service = WinGuiService()\n@mcp.tool\ndef ping() -> dict:\n    \"\"\"Check whether the Windows GUI MCP server is responsive.\"\"\"\n    return service.ping()\n@mcp.tool\ndef launch_app(args: list[str] | None = None) -> dict:\n    \"\"\"Launch the configured application with optional extra arguments.\"\"\"\n    return service.launch_app(args=args)\n@mcp.tool",
         "detail": "server",
-        "documentation": {}
-    },
-    {
-        "label": "WindowInfo",
-        "kind": 6,
-        "importPath": "win_gui_core",
-        "description": "win_gui_core",
-        "peekOfCode": "class WindowInfo:\n    hwnd: int\n    title: str\n    class_name: str\n    pid: int\n    rect: tuple[int, int, int, int]\n    visible: bool\n    def as_dict(self) -> dict[str, Any]:\n        left, top, right, bottom = self.rect\n        return {",
-        "detail": "win_gui_core",
-        "documentation": {}
-    },
-    {
-        "label": "DesktopHarness",
-        "kind": 6,
-        "importPath": "win_gui_core",
-        "description": "win_gui_core",
-        "peekOfCode": "class DesktopHarness:\n    def __init__(self) -> None:\n        self.app_exe = os.environ.get(\"APP_EXE\", \"\")\n        self.app_workdir = os.environ.get(\"APP_WORKDIR\", \"\")\n        self.app_log_dir = Path(os.environ.get(\"APP_LOG_DIR\", \"logs\"))\n        self.app_state_dir = Path(os.environ.get(\"APP_STATE_DIR\", \"state\"))\n        self.main_window_title_regex = os.environ.get(\"MAIN_WINDOW_TITLE_REGEX\", \".*\")\n        self._last_pid: int | None = None\n        self._desktop = Desktop(backend=\"uia\")\n    def launch_app(self, args: list[str] | None = None) -> dict[str, Any]:",
-        "detail": "win_gui_core",
-        "documentation": {}
-    },
-    {
-        "label": "pyautogui.FAILSAFE",
-        "kind": 5,
-        "importPath": "win_gui_core",
-        "description": "win_gui_core",
-        "peekOfCode": "pyautogui.FAILSAFE = True\npyautogui.PAUSE = 0.03\n@dataclass\nclass WindowInfo:\n    hwnd: int\n    title: str\n    class_name: str\n    pid: int\n    rect: tuple[int, int, int, int]\n    visible: bool",
-        "detail": "win_gui_core",
-        "documentation": {}
-    },
-    {
-        "label": "pyautogui.PAUSE",
-        "kind": 5,
-        "importPath": "win_gui_core",
-        "description": "win_gui_core",
-        "peekOfCode": "pyautogui.PAUSE = 0.03\n@dataclass\nclass WindowInfo:\n    hwnd: int\n    title: str\n    class_name: str\n    pid: int\n    rect: tuple[int, int, int, int]\n    visible: bool\n    def as_dict(self) -> dict[str, Any]:",
-        "detail": "win_gui_core",
         "documentation": {}
     }
 ]
