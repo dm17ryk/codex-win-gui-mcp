@@ -17,9 +17,9 @@ class ComputerUseRunner:
         self.service = service or WinGuiService()
         self.client = client or OpenAI()
 
-    def run(self, *, goal: str, window_title: str | None, full_screen: bool) -> Any:
+    def run(self, *, goal: str, window_title: str | None, full_screen: bool, pid: int | None = None) -> Any:
         capture_mode = "full_screen" if full_screen else "window"
-        self.service.create_session(title_regex=window_title, capture_mode=capture_mode)
+        self.service.create_session(title_regex=window_title, pid=pid, capture_mode=capture_mode)
         response = self._send_first_request(goal)
         while True:
             computer_call = self._find_computer_call(response)

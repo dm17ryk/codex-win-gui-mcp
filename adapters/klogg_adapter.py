@@ -30,24 +30,39 @@ class KloggAdapter:
         }
 
     def klogg_search(self, text: str, regex: bool = False, case_sensitive: bool = False) -> dict[str, Any]:
+        if not text:
+            raise AdapterError("klogg_search requires a non-empty search expression.")
+        args = ["command", "--action", "search", "--text", text]
+        if regex:
+            args.append("--regex")
+        if case_sensitive:
+            args.append("--case-sensitive")
+        result = self.qt_adapter.run_app_command(args)
+        extracted = self._extract_klogg_state(result) if result else self._extract_klogg_state(self.qt_adapter.dump_qt_state())
         return {
             "ok": True,
             "search_text": text,
             "regex": regex,
             "case_sensitive": case_sensitive,
-            "note": "Search execution requires app-side automation support.",
+            "state": extracted,
         }
 
     def klogg_toggle_follow(self, enabled: bool | None = None) -> dict[str, Any]:
         state = self.qt_adapter.dump_qt_state()
         extracted = self._extract_klogg_state(state)
         current = bool(extracted["follow_mode"])
-        return {"ok": True, "follow_mode": (not current) if enabled is None else enabled}
+        target_state = (not current) if enabled is None else enabled
+        result = self.qt_adapter.run_app_command(
+            ["command", "--action", "set_follow_mode", "--enabled" if target_state else "--disabled"]
+        )
+        next_state = self._extract_klogg_state(result) if result else self._extract_klogg_state(self.qt_adapter.dump_qt_state())
+        return {"ok": True, "follow_mode": target_state, "state": next_state}
 
     def klogg_open_log(self, path: str) -> dict[str, Any]:
         if not path:
             raise AdapterError("klogg_open_log requires a non-empty file path.")
-        return {"ok": True, "path": path, "note": "Opening the log file requires app-side automation support."}
+        self.qt_adapter.run_app_command(["command", "--action", "open_file", "--file", path])
+        return {"ok": True, "path": path}
 
     @staticmethod
     def _extract_klogg_state(state: dict[str, Any]) -> dict[str, Any]:
@@ -61,7 +76,12 @@ class KloggAdapter:
             "visible_line_end": data.get("visibleLineEnd"),
             "search_text": data.get("searchText"),
             "match_count": data.get("matchCount"),
+            "search_in_progress": data.get("searchInProgress"),
             "follow_mode": data.get("followMode"),
+            "loading_in_progress": data.get("loadingInProgress"),
+            "startup_ready": data.get("startupReady"),
+            "window_id": data.get("windowId"),
+            "window_index": data.get("windowIndex"),
             "scratch_pad": data.get("scratchPad"),
             "encoding": data.get("encoding"),
             "parser_mode": data.get("parserMode"),

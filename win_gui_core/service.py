@@ -12,6 +12,7 @@ from adapters.klogg_adapter import KloggAdapter
 from adapters.qt_adapter import QtAdapter
 
 from .artifacts import ArtifactManager
+from .errors import AdapterError
 from .input import InputController, normalize_drag_path
 from .logs import LogManager
 from .screenshots import ScreenshotManager
@@ -148,6 +149,24 @@ class WinGuiService:
     def wait_window_stable(self, timeout_sec: float = 5.0) -> dict[str, Any]:
         session = self.sessions.get()
         result = self.windows.wait_window_stable(title_regex=session.title_regex, pid=session.pid, timeout_sec=timeout_sec)
+        window = result["window"]
+        session.hwnd = int(window["hwnd"])
+        session.pid = int(window["pid"])
+        if session.viewport is not None and session.capture_mode == "window":
+            rect = result["rect"]
+            session.viewport = Viewport(
+                mode="window",
+                left=rect["left"],
+                top=rect["top"],
+                width=rect["width"],
+                height=rect["height"],
+                hwnd=session.hwnd,
+                pid=session.pid,
+                title=window["title"],
+                monitor_index=None,
+                captured_at=time.time(),
+                coord_space="screen",
+            )
         self.sessions.trace("assertion", kind="wait_window_stable", result=result)
         return result
 
@@ -350,6 +369,12 @@ class WinGuiService:
 
     def create_artifact_bundle(self, reason: str | None = None) -> dict[str, Any]:
         session = self.sessions.get()
+        if not session.last_screenshot_path:
+            try:
+                self.capture_screenshot(mode=session.capture_mode)
+            except Exception:
+                pass
+
         ui_tree = None
         if session.title_regex:
             try:
@@ -362,7 +387,25 @@ class WinGuiService:
                 qt_state = self.qt_adapter.dump_qt_state()
             except Exception:
                 qt_state = None
-        result = self.artifacts.create_bundle(session, reason=reason, ui_tree=ui_tree, qt_state=qt_state)
+        process_tree = None
+        if session.pid is not None:
+            try:
+                process_tree = self.get_process_tree(pid=session.pid)
+            except Exception:
+                process_tree = None
+        event_logs = None
+        try:
+            event_logs = self.collect_event_logs()
+        except Exception:
+            event_logs = None
+        result = self.artifacts.create_bundle(
+            session,
+            reason=reason,
+            ui_tree=ui_tree,
+            qt_state=qt_state,
+            process_tree=process_tree,
+            event_logs=event_logs,
+        )
         self.sessions.trace("artifact_bundle", result=result)
         return result
 
@@ -383,12 +426,27 @@ class WinGuiService:
 
     def click_qt_object(self, object_name: str | None = None, accessible_name: str | None = None, role: str | None = None) -> dict[str, Any]:
         result = self.qt_adapter.click_qt_object(object_name=object_name, accessible_name=accessible_name, role=role)
+        click = self._click_qt_node(result["object"])
+        result = {**result, "click": click}
         if self.sessions.maybe_get():
             self.sessions.trace("adapter_call", adapter="qt", action="click_qt_object", locator=result["locator"])
         return result
 
     def invoke_qt_action(self, action_name: str) -> dict[str, Any]:
-        result = self.qt_adapter.invoke_qt_action(action_name)
+        try:
+            result = self.qt_adapter.invoke_qt_action(action_name)
+        except AdapterError:
+            dump = self.qt_adapter.dump_qt_state()
+            action = self._resolve_qt_action(dump, action_name)
+            click_target = self._find_clickable_target_for_action(dump, action)
+            if click_target is None:
+                raise
+            result = {
+                "ok": True,
+                "action": action,
+                "fallback": "click",
+                "click": self._click_qt_node(click_target),
+            }
         if self.sessions.maybe_get():
             self.sessions.trace("adapter_call", adapter="qt", action="invoke_qt_action", action_name=action_name)
         return result
@@ -459,3 +517,92 @@ class WinGuiService:
             captured_at=viewport.get("captured_at", time.time()),
             coord_space=viewport.get("coord_space", "screen"),
         )
+
+    def _ensure_viewport(self) -> Viewport:
+        session = self.sessions.get()
+        if session.viewport is not None and (
+            session.viewport.hwnd is None or self.windows.is_window(session.viewport.hwnd)
+        ):
+            return session.viewport
+        if session.capture_mode == "full_screen":
+            monitor = self.windows.primary_monitor_bbox()
+            viewport = Viewport(
+                mode="full_screen",
+                left=monitor["left"],
+                top=monitor["top"],
+                width=monitor["width"],
+                height=monitor["height"],
+                hwnd=None,
+                pid=session.pid,
+                title=session.title_regex,
+                monitor_index=1,
+                captured_at=time.time(),
+                coord_space="screen",
+            )
+            self.sessions.set_viewport(viewport)
+            return viewport
+
+        window = self.windows.resolve_window(title_regex=session.title_regex, pid=session.pid, timeout_sec=10.0)
+        rect = self.windows.get_window_rect(window["hwnd"])
+        viewport = Viewport(
+            mode="window",
+            left=rect["left"],
+            top=rect["top"],
+            width=rect["width"],
+            height=rect["height"],
+            hwnd=window["hwnd"],
+            pid=window["pid"],
+            title=window["title"],
+            monitor_index=None,
+            captured_at=time.time(),
+            coord_space="screen",
+        )
+        self.sessions.set_viewport(viewport)
+        return viewport
+
+    def _click_qt_node(self, node: dict[str, Any], *, button: str = "left") -> dict[str, Any]:
+        bounds = node.get("bounds") or {}
+        width = int(bounds.get("width", 0))
+        height = int(bounds.get("height", 0))
+        if width <= 0 or height <= 0:
+            raise AdapterError("Qt object does not expose clickable bounds.")
+
+        viewport = self._ensure_viewport()
+        if viewport.hwnd is not None:
+            self.windows.focus_window(viewport.hwnd)
+        center_x = int(bounds.get("x", 0)) + width // 2
+        center_y = int(bounds.get("y", 0)) + height // 2
+        return self.input.click_point(center_x, center_y, coord_space="viewport", viewport=viewport, button=button)
+
+    @staticmethod
+    def _iter_qt_nodes(root: dict[str, Any]) -> list[dict[str, Any]]:
+        queue = [root]
+        nodes: list[dict[str, Any]] = []
+        while queue:
+            node = queue.pop(0)
+            nodes.append(node)
+            queue.extend(node.get("children", []))
+        return nodes
+
+    @staticmethod
+    def _resolve_qt_action(state: dict[str, Any], action_name: str) -> dict[str, Any]:
+        for action in state.get("actions", []):
+            if action.get("objectName") == action_name or action.get("text") == action_name:
+                return action
+        raise AdapterError(f"Qt action {action_name!r} was not present in the state dump.")
+
+    def _find_clickable_target_for_action(self, state: dict[str, Any], action: dict[str, Any]) -> dict[str, Any] | None:
+        action_object_name = action.get("objectName")
+        action_text = action.get("text")
+        for node in self._iter_qt_nodes(state):
+            bounds = node.get("bounds")
+            if not isinstance(bounds, dict) or not bounds:
+                continue
+            if action_object_name and node.get("objectName") == action_object_name:
+                return node
+            if action_text and (
+                node.get("accessibleName") == action_text
+                or node.get("text") == action_text
+            ):
+                return node
+        return None

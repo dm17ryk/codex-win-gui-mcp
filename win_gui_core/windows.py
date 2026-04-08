@@ -111,6 +111,10 @@ class WindowManager:
             "height": max(0, bottom - top),
         }
 
+    @staticmethod
+    def is_window(hwnd: int | None) -> bool:
+        return bool(hwnd) and bool(win32gui.IsWindow(hwnd))
+
     def focus_window(self, hwnd: int) -> dict[str, Any]:
         try:
             if win32gui.IsIconic(hwnd):

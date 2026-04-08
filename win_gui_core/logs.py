@@ -48,6 +48,9 @@ class LogManager:
                 continue
             if item.stat().st_mtime < cutoff:
                 continue
+            lower_suffix = item.suffix.lower()
+            if lower_suffix not in {".log", ".txt", ".json", ".ini", ".conf"}:
+                continue
             relative = item.relative_to(self.app_log_dir)
             destination = out_dir / relative
             destination.parent.mkdir(parents=True, exist_ok=True)

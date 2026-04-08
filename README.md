@@ -53,7 +53,9 @@ Model guidance:
 
 ## 4. Wire the MCP server into Codex
 
-Merge [user_config.toml.example](/D:/Essence_SC/lsrc/codex-win-gui-mcp/user_config.toml.example) into `%USERPROFILE%\.codex\config.toml` or into a project-local `.codex\config.toml`.
+Merge [user_config.toml.example](/D:/Essence_SC/lsrc/codex-win-gui-mcp/user_config.toml.example) into `%USERPROFILE%\.codex\config.toml`.
+
+Keep Win GUI MCP registration user-local. Do not commit project-scoped Codex MCP registration for this workflow.
 
 Adjust:
 
@@ -176,7 +178,23 @@ Typical contents:
 
 See [LOCAL_ENVIRONMENT_SETUP.md](/D:/Essence_SC/lsrc/codex-win-gui-mcp/LOCAL_ENVIRONMENT_SETUP.md).
 
-## 11. Direct Computer Use loop
+## 11. Klogg validation workflow
+
+For the full `klogg <-> codex-win-gui-mcp` validation matrix, use:
+
+```powershell
+.\scripts\run-klogg-validation.ps1 -KloggRoot C:\src\klogg -Config RelWithDebInfo
+```
+
+This runs:
+
+- the fast unit/regression checks for adapters, service fallback, and validation scaffolding;
+- the live semantic klogg smoke flow;
+- one bounded OpenAI computer-use debugging scenario.
+
+Detailed prerequisites, env values, artifact expectations, and failure triage are in [dev_tasks/klogg_validation.md](/D:/Essence_SC/lsrc/codex-win-gui-mcp/dev_tasks/klogg_validation.md).
+
+## 12. Direct Computer Use loop
 
 ```powershell
 .\.venv\Scripts\python.exe .\openai_loop.py --window-title "MyApp" "Open the Settings window, switch to Advanced, and tell me whether the Save button becomes disabled."
@@ -184,7 +202,7 @@ See [LOCAL_ENVIRONMENT_SETUP.md](/D:/Essence_SC/lsrc/codex-win-gui-mcp/LOCAL_ENV
 
 Use `--full-screen` only when the task genuinely spans the desktop rather than one pinned target window.
 
-## 12. Safety notes
+## 13. Safety notes
 
 - Run destructive scenarios in an isolated Windows VM or disposable user profile.
 - Prefer semantic/UIA interactions over blind coordinate clicks.

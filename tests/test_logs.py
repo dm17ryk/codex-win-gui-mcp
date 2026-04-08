@@ -28,10 +28,12 @@ class LogManagerTests(unittest.TestCase):
             nested = root / "nested"
             nested.mkdir(parents=True)
             (nested / "app.log").write_text("hello", encoding="utf-8")
+            (nested / "app.exe").write_text("binary", encoding="utf-8")
             manager = LogManager(root)
             result = manager.collect_recent_logs(minutes=60, output_dir=str(output))
             self.assertTrue(result["ok"])
             self.assertTrue((output / "nested" / "app.log").exists())
+            self.assertFalse((output / "nested" / "app.exe").exists())
 
 
 if __name__ == "__main__":
