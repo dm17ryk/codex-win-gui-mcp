@@ -44,9 +44,9 @@ dotnet build .\MyApp.sln -c Debug
 .\.venv\Scripts\python.exe .\openai_loop.py --window-title "MyApp" "Open Settings, switch to Advanced, and report any visible error dialog."
 ```
 
-### Run Klogg Validation
+### Run CILogg Validation
 ```powershell
-.\scripts\run-klogg-validation.ps1 -KloggRoot C:\src\klogg -Config RelWithDebInfo
+.\scripts\run-cilogg-validation.ps1 -CILoggRoot C:\src\klogg -Config RelWithDebInfo
 ```
 
 ## Recommended Codex prompts
@@ -54,4 +54,4 @@ dotnet build .\MyApp.sln -c Debug
 - `Launch the app, create a session, wait for the window to stabilize, and inspect the UI tree before clicking anything.`
 - `Reproduce the bug, assert the expected UI state, then create an artifact bundle and summarize the failure.`
 - `Use click_element first; if the target isn't in UIA, capture a screenshot and use viewport-relative click_point or drag_path.`
-- `Run the klogg validation workflow, inspect the semantic smoke result, then open the artifact bundle before changing code.`
+- `Run the CILogg validation workflow, inspect the semantic smoke result, then open the artifact bundle before changing code.`

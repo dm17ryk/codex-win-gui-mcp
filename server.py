@@ -422,39 +422,39 @@ def toggle_qt_control(object_name: str | None = None, accessible_name: str | Non
 
 
 @mcp.tool
-def klogg_open_log(path: str) -> dict:
-    """Prepare an instrumented klogg instance to open a log file."""
-    return service.klogg_open_log(path=path)
+def cilogg_open_log(path: str) -> dict:
+    """Prepare an instrumented CILogg instance to open a log file."""
+    return service.cilogg_open_log(path=path)
 
 
 @mcp.tool
-def klogg_search(text: str, regex: bool = False, case_sensitive: bool = False) -> dict:
-    """Execute or describe a klogg search request."""
-    return service.klogg_search(text=text, regex=regex, case_sensitive=case_sensitive)
+def cilogg_search(text: str, regex: bool = False, case_sensitive: bool = False) -> dict:
+    """Execute or describe a CILogg search request."""
+    return service.cilogg_search(text=text, regex=regex, case_sensitive=case_sensitive)
 
 
 @mcp.tool
-def klogg_get_state() -> dict:
-    """Return the normalized instrumented klogg state snapshot."""
-    return service.klogg_get_state()
+def cilogg_get_state() -> dict:
+    """Return the normalized instrumented CILogg state snapshot."""
+    return service.cilogg_get_state()
 
 
 @mcp.tool
-def klogg_get_active_tab() -> dict:
-    """Return the current klogg tab metadata."""
-    return service.klogg_get_active_tab()
+def cilogg_get_active_tab() -> dict:
+    """Return the current CILogg tab metadata."""
+    return service.cilogg_get_active_tab()
 
 
 @mcp.tool
-def klogg_toggle_follow(enabled: bool | None = None) -> dict:
-    """Toggle or set klogg follow mode."""
-    return service.klogg_toggle_follow(enabled=enabled)
+def cilogg_toggle_follow(enabled: bool | None = None) -> dict:
+    """Toggle or set CILogg follow mode."""
+    return service.cilogg_toggle_follow(enabled=enabled)
 
 
 @mcp.tool
-def klogg_get_visible_range() -> dict:
-    """Return the visible klogg line range."""
-    return service.klogg_get_visible_range()
+def cilogg_get_visible_range() -> dict:
+    """Return the visible CILogg line range."""
+    return service.cilogg_get_visible_range()
 
 
 if __name__ == "__main__":

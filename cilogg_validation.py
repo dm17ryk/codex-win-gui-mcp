@@ -2,11 +2,11 @@ from __future__ import annotations
 
 import json
 
-from win_gui_core.klogg_validation import KloggValidationRunner
+from win_gui_core.cilogg_validation import CILoggValidationRunner
 
 
 def main() -> int:
-    result = KloggValidationRunner().run()
+    result = CILoggValidationRunner().run()
     print(json.dumps(result, indent=2))
     return 0
 

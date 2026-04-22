@@ -4,6 +4,7 @@ import json
 import os
 import subprocess
 import tempfile
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -35,18 +36,50 @@ class QtAdapter:
     def dump_qt_state(self) -> dict[str, Any]:
         if not self.app_exe:
             raise AdapterError("APP_EXE is not configured for Qt state dumps.")
-        with tempfile.NamedTemporaryFile(prefix="qt-state-", suffix=".json", delete=False) as handle:
-            path = Path(handle.name)
         env = os.environ.copy()
         if self.automation_env_var:
             env[self.automation_env_var] = "1"
-        cmd = [self.app_exe, self.dump_arg, str(path)]
-        result = self._run_subprocess(cmd=cmd, env=env)
-        if result.returncode != 0:
-            raise AdapterError(f"Qt state dump command failed: {result.stderr.strip() or result.stdout.strip()}")
-        if not path.exists():
-            raise AdapterError(f"Qt state dump file was not created: {path}")
-        return json.loads(path.read_text(encoding="utf-8"))
+        last_error: Exception | None = None
+        attempts = 6
+
+        for attempt in range(attempts):
+            with tempfile.NamedTemporaryFile(prefix="qt-state-", suffix=".json", delete=False) as handle:
+                path = Path(handle.name)
+
+            cmd = [self.app_exe, self.dump_arg, str(path)]
+            result = self._run_subprocess(cmd=cmd, env=env)
+            if result.returncode != 0:
+                if attempt + 1 >= attempts or not self._is_retryable_command_error(result):
+                    raise AdapterError(
+                        f"Qt state dump command failed: {result.stderr.strip() or result.stdout.strip()}"
+                    )
+                time.sleep(1.0)
+                continue
+
+            deadline = time.time() + 5.0
+            while time.time() < deadline:
+                if not path.exists():
+                    time.sleep(0.1)
+                    continue
+                try:
+                    payload = path.read_text(encoding="utf-8").strip()
+                    if not payload:
+                        raise json.JSONDecodeError("Empty JSON payload", "", 0)
+                    return json.loads(payload)
+                except json.JSONDecodeError as exc:
+                    last_error = exc
+                    time.sleep(0.1)
+
+            if not path.exists():
+                last_error = AdapterError(f"Qt state dump file was not created: {path}")
+            else:
+                last_error = AdapterError(f"Qt state dump file did not contain valid JSON: {path}")
+
+            if attempt + 1 < attempts:
+                time.sleep(1.0)
+                continue
+
+        raise AdapterError(f"Qt state dump failed after retries: {last_error}")
 
     def run_app_command(self, args: list[str]) -> dict[str, Any]:
         if not self.app_exe:
@@ -55,9 +88,16 @@ class QtAdapter:
         if self.automation_env_var:
             env[self.automation_env_var] = "1"
         cmd = [self.app_exe, *args]
-        result = self._run_subprocess(cmd=cmd, env=env)
-        if result.returncode != 0:
-            raise AdapterError(f"Qt app command failed: {result.stderr.strip() or result.stdout.strip()}")
+        attempts = 6 if args and args[0] == "command" else 1
+        result: subprocess.CompletedProcess[str] | None = None
+        for attempt in range(attempts):
+            result = self._run_subprocess(cmd=cmd, env=env)
+            if result.returncode == 0:
+                break
+            if attempt + 1 >= attempts or not self._is_retryable_command_error(result):
+                raise AdapterError(f"Qt app command failed: {result.stderr.strip() or result.stdout.strip()}")
+            time.sleep(1.0)
+        assert result is not None
         stdout = (result.stdout or "").strip()
         if not stdout:
             return {}
@@ -116,6 +156,15 @@ class QtAdapter:
             capture_output=True,
             text=True,
             check=False,
+        )
+
+    @staticmethod
+    def _is_retryable_command_error(result: subprocess.CompletedProcess[str]) -> bool:
+        message = f"{result.stderr or ''}\n{result.stdout or ''}"
+        return (
+            "Failed to contact the primary CILogg instance." in message
+            or "No running CILogg instance." in message
+            or "Timed out waiting for commander response." in message
         )
 
     @staticmethod

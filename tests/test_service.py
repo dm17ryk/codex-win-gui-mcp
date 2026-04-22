@@ -4,7 +4,7 @@ import sys
 import time
 import unittest
 from unittest import mock
-from types import SimpleNamespace
+from types import ModuleType, SimpleNamespace
 
 class _DummyMSS:
     monitors = [None, {"left": 0, "top": 0, "width": 1920, "height": 1080}]
@@ -29,9 +29,24 @@ class _DummyDesktop:
         raise RuntimeError("UIA desktop access is not available in this unit test.")
 
 
-_dummy_image_module = SimpleNamespace(
-    frombytes=lambda *args, **kwargs: SimpleNamespace(save=lambda *save_args, **save_kwargs: None)
-)
+def _install_pillow_stub() -> None:
+    try:
+        from PIL import Image as _image  # type: ignore
+
+        if hasattr(_image, "new") and hasattr(_image, "open"):
+            return
+    except Exception:
+        pass
+
+    dummy_image_module = ModuleType("PIL.Image")
+    dummy_image_module.frombytes = lambda *args, **kwargs: SimpleNamespace(  # type: ignore[attr-defined]
+        save=lambda *save_args, **save_kwargs: None
+    )
+
+    pil_module = ModuleType("PIL")
+    pil_module.Image = dummy_image_module  # type: ignore[attr-defined]
+    sys.modules["PIL"] = pil_module
+    sys.modules["PIL.Image"] = dummy_image_module
 
 sys.modules.setdefault(
     "pyautogui",
@@ -48,8 +63,7 @@ sys.modules.setdefault(
     ),
 )
 sys.modules.setdefault("mss", SimpleNamespace(mss=_DummyMSS))
-sys.modules.setdefault("PIL", SimpleNamespace(Image=_dummy_image_module))
-sys.modules.setdefault("PIL.Image", _dummy_image_module)
+_install_pillow_stub()
 sys.modules.setdefault("pywinauto", SimpleNamespace(Desktop=_DummyDesktop))
 
 from win_gui_core.errors import AdapterError
@@ -60,7 +74,7 @@ from win_gui_core.session import Viewport
 class ServiceQtFallbackTests(unittest.TestCase):
     def _create_service_with_viewport(self) -> tuple[WinGuiService, Viewport]:
         service = WinGuiService()
-        service.sessions.create(title_regex="klogg", pid=123, hwnd=None, capture_mode="window", adapter="qt")
+        service.sessions.create(title_regex=r"(?i)cilogg", pid=123, hwnd=None, capture_mode="window", adapter="qt")
         viewport = Viewport(
             mode="window",
             left=100,
@@ -69,7 +83,7 @@ class ServiceQtFallbackTests(unittest.TestCase):
             height=600,
             hwnd=None,
             pid=123,
-            title="klogg",
+            title="CILogg",
             monitor_index=None,
             captured_at=time.time(),
             coord_space="screen",
@@ -124,7 +138,7 @@ class ServiceQtFallbackTests(unittest.TestCase):
         service.windows.wait_window_stable = mock.Mock(  # type: ignore[method-assign]
             return_value={
                 "ok": True,
-                "window": {"hwnd": 456, "pid": 789, "title": "klogg"},
+                "window": {"hwnd": 456, "pid": 789, "title": "CILogg"},
                 "rect": {"left": 10, "top": 20, "width": 300, "height": 200},
             }
         )
@@ -137,6 +151,23 @@ class ServiceQtFallbackTests(unittest.TestCase):
         self.assertEqual(session.pid, 789)
         self.assertIsNotNone(session.viewport)
         self.assertEqual(session.viewport.hwnd, 456)
+
+    def test_launch_app_sets_qt_automation_env(self) -> None:
+        service = WinGuiService()
+        service.app_exe = "cilogg.exe"
+        service.app_workdir = r"D:\klogg"
+        service.qt_automation_env = "CILOGG_AUTOMATION"
+
+        with mock.patch("win_gui_core.service.subprocess.Popen") as popen:
+            popen.return_value.pid = 4242
+            result = service.launch_app(args=["-n"])
+
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["pid"], 4242)
+        popen.assert_called_once()
+        kwargs = popen.call_args.kwargs
+        self.assertEqual(kwargs["cwd"], r"D:\klogg")
+        self.assertEqual(kwargs["env"]["CILOGG_AUTOMATION"], "1")
 
 
 if __name__ == "__main__":

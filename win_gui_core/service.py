@@ -8,7 +8,7 @@ from typing import Any
 
 import psutil
 
-from adapters.klogg_adapter import KloggAdapter
+from adapters.cilogg_adapter import CILoggAdapter
 from adapters.qt_adapter import QtAdapter
 
 from .artifacts import ArtifactManager
@@ -29,7 +29,7 @@ class WinGuiService:
         self.app_dump_dir = Path(os.environ["APP_DUMP_DIR"]) if os.environ.get("APP_DUMP_DIR") else None
         self.main_window_title_regex = os.environ.get("MAIN_WINDOW_TITLE_REGEX", ".*")
         self.qt_dump_arg = os.environ.get("APP_STATE_DUMP_ARG", "--dump-state-json")
-        self.qt_automation_env = os.environ.get("QT_AUTOMATION_ENV_VAR", "KLOGG_AUTOMATION")
+        self.qt_automation_env = os.environ.get("QT_AUTOMATION_ENV_VAR", "CILOGG_AUTOMATION")
         self.artifacts_root = Path.cwd() / "artifacts" / "sessions"
         self.sessions = SessionStore(self.artifacts_root)
         self.windows = WindowManager(self.main_window_title_regex)
@@ -44,7 +44,7 @@ class WinGuiService:
             dump_arg=self.qt_dump_arg,
             automation_env_var=self.qt_automation_env,
         )
-        self.klogg_adapter = KloggAdapter(self.qt_adapter)
+        self.cilogg_adapter = CILoggAdapter(self.qt_adapter)
         self._last_pid: int | None = None
 
     def ping(self) -> dict[str, Any]:
@@ -55,9 +55,13 @@ class WinGuiService:
             raise RuntimeError("APP_EXE is not set")
         env_args = os.environ.get("APP_ARGS", "").split() if os.environ.get("APP_ARGS") else []
         cmd = [self.app_exe, *env_args, *(args or [])]
+        env = os.environ.copy()
+        if self.qt_automation_env:
+            env[self.qt_automation_env] = "1"
         proc = subprocess.Popen(
             cmd,
             cwd=self.app_workdir or None,
+            env=env,
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
             creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,
@@ -382,7 +386,7 @@ class WinGuiService:
             except Exception:
                 ui_tree = None
         qt_state = None
-        if session.adapter in {"qt", "klogg"}:
+        if session.adapter in {"qt", "cilogg"}:
             try:
                 qt_state = self.qt_adapter.dump_qt_state()
             except Exception:
@@ -463,40 +467,40 @@ class WinGuiService:
             self.sessions.trace("adapter_call", adapter="qt", action="toggle_qt_control")
         return result
 
-    def klogg_open_log(self, path: str) -> dict[str, Any]:
-        result = self.klogg_adapter.klogg_open_log(path)
+    def cilogg_open_log(self, path: str) -> dict[str, Any]:
+        result = self.cilogg_adapter.cilogg_open_log(path)
         if self.sessions.maybe_get():
-            self.sessions.trace("adapter_call", adapter="klogg", action="klogg_open_log", path=path)
+            self.sessions.trace("adapter_call", adapter="cilogg", action="cilogg_open_log", path=path)
         return result
 
-    def klogg_search(self, text: str, regex: bool = False, case_sensitive: bool = False) -> dict[str, Any]:
-        result = self.klogg_adapter.klogg_search(text=text, regex=regex, case_sensitive=case_sensitive)
+    def cilogg_search(self, text: str, regex: bool = False, case_sensitive: bool = False) -> dict[str, Any]:
+        result = self.cilogg_adapter.cilogg_search(text=text, regex=regex, case_sensitive=case_sensitive)
         if self.sessions.maybe_get():
-            self.sessions.trace("adapter_call", adapter="klogg", action="klogg_search", text=text)
+            self.sessions.trace("adapter_call", adapter="cilogg", action="cilogg_search", text=text)
         return result
 
-    def klogg_get_state(self) -> dict[str, Any]:
-        result = self.klogg_adapter.klogg_get_state()
+    def cilogg_get_state(self) -> dict[str, Any]:
+        result = self.cilogg_adapter.cilogg_get_state()
         if self.sessions.maybe_get():
-            self.sessions.trace("adapter_call", adapter="klogg", action="klogg_get_state")
+            self.sessions.trace("adapter_call", adapter="cilogg", action="cilogg_get_state")
         return result
 
-    def klogg_get_active_tab(self) -> dict[str, Any]:
-        result = self.klogg_adapter.klogg_get_active_tab()
+    def cilogg_get_active_tab(self) -> dict[str, Any]:
+        result = self.cilogg_adapter.cilogg_get_active_tab()
         if self.sessions.maybe_get():
-            self.sessions.trace("adapter_call", adapter="klogg", action="klogg_get_active_tab")
+            self.sessions.trace("adapter_call", adapter="cilogg", action="cilogg_get_active_tab")
         return result
 
-    def klogg_toggle_follow(self, enabled: bool | None = None) -> dict[str, Any]:
-        result = self.klogg_adapter.klogg_toggle_follow(enabled=enabled)
+    def cilogg_toggle_follow(self, enabled: bool | None = None) -> dict[str, Any]:
+        result = self.cilogg_adapter.cilogg_toggle_follow(enabled=enabled)
         if self.sessions.maybe_get():
-            self.sessions.trace("adapter_call", adapter="klogg", action="klogg_toggle_follow")
+            self.sessions.trace("adapter_call", adapter="cilogg", action="cilogg_toggle_follow")
         return result
 
-    def klogg_get_visible_range(self) -> dict[str, Any]:
-        result = self.klogg_adapter.klogg_get_visible_range()
+    def cilogg_get_visible_range(self) -> dict[str, Any]:
+        result = self.cilogg_adapter.cilogg_get_visible_range()
         if self.sessions.maybe_get():
-            self.sessions.trace("adapter_call", adapter="klogg", action="klogg_get_visible_range")
+            self.sessions.trace("adapter_call", adapter="cilogg", action="cilogg_get_visible_range")
         return result
 
     @staticmethod

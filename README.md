@@ -4,7 +4,7 @@ This repository provides a session-first Windows GUI automation harness for Code
 
 - a thin MCP server in [server.py](/D:/Essence_SC/lsrc/codex-win-gui-mcp/server.py);
 - a modular harness package in [win_gui_core](/D:/Essence_SC/lsrc/codex-win-gui-mcp/win_gui_core);
-- Qt and klogg adapter helpers in [adapters](/D:/Essence_SC/lsrc/codex-win-gui-mcp/adapters);
+- Qt and CILogg adapter helpers in [adapters](/D:/Essence_SC/lsrc/codex-win-gui-mcp/adapters);
 - a local Computer Use loop in [openai_loop.py](/D:/Essence_SC/lsrc/codex-win-gui-mcp/openai_loop.py) and [loops/computer_use.py](/D:/Essence_SC/lsrc/codex-win-gui-mcp/loops/computer_use.py).
 
 ## 1. Install prerequisites
@@ -126,14 +126,14 @@ The current MCP surface is session-first:
 - `invoke_qt_action`
 - `set_qt_value`
 - `toggle_qt_control`
-- `klogg_open_log`
-- `klogg_search`
-- `klogg_get_state`
-- `klogg_get_active_tab`
-- `klogg_toggle_follow`
-- `klogg_get_visible_range`
+- `cilogg_open_log`
+- `cilogg_search`
+- `cilogg_get_state`
+- `cilogg_get_active_tab`
+- `cilogg_toggle_follow`
+- `cilogg_get_visible_range`
 
-## 8. Qt and klogg instrumentation
+## 8. Qt and CILogg instrumentation
 
 This repo now assumes deep instrumentation is allowed for Qt targets.
 
@@ -142,10 +142,10 @@ Recommended target-app support:
 - stable `objectName` values on important widgets and `QAction`s;
 - `accessibleName` on icon-only or ambiguous controls;
 - optional `accessibleDescription`;
-- an automation mode such as `KLOGG_AUTOMATION=1`;
+- an automation mode such as `CILOGG_AUTOMATION=1`;
 - a state dump endpoint, with `--dump-state-json <path>` used by default in this repo.
 
-Useful klogg state fields:
+Useful CILogg state fields:
 
 - `activeFile`
 - `activeTabTitle`
@@ -178,21 +178,21 @@ Typical contents:
 
 See [LOCAL_ENVIRONMENT_SETUP.md](/D:/Essence_SC/lsrc/codex-win-gui-mcp/LOCAL_ENVIRONMENT_SETUP.md).
 
-## 11. Klogg validation workflow
+## 11. CILogg validation workflow
 
-For the full `klogg <-> codex-win-gui-mcp` validation matrix, use:
+For the full `CILogg <-> codex-win-gui-mcp` validation matrix, use:
 
 ```powershell
-.\scripts\run-klogg-validation.ps1 -KloggRoot C:\src\klogg -Config RelWithDebInfo
+.\scripts\run-cilogg-validation.ps1 -CILoggRoot C:\src\klogg -Config RelWithDebInfo
 ```
 
 This runs:
 
 - the fast unit/regression checks for adapters, service fallback, and validation scaffolding;
-- the live semantic klogg smoke flow;
+- the live semantic CILogg smoke flow;
 - one bounded OpenAI computer-use debugging scenario.
 
-Detailed prerequisites, env values, artifact expectations, and failure triage are in [dev_tasks/klogg_validation.md](/D:/Essence_SC/lsrc/codex-win-gui-mcp/dev_tasks/klogg_validation.md).
+Detailed prerequisites, env values, artifact expectations, and failure triage are in [dev_tasks/cilogg_validation.md](/D:/Essence_SC/lsrc/codex-win-gui-mcp/dev_tasks/cilogg_validation.md).
 
 ## 12. Direct Computer Use loop
 

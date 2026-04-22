@@ -27,7 +27,7 @@ class ArtifactTests(unittest.TestCase):
                 session,
                 reason="unit-test",
                 ui_tree={"name": "root"},
-                qt_state={"windowInfo": {}, "actions": [], "kloggState": {}},
+                qt_state={"windowInfo": {}, "actions": [], "ciloggState": {}},
                 process_tree={"ok": True, "root": {"pid": 1}},
             )
             self.assertTrue(result["ok"])

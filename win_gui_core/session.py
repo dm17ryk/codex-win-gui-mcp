@@ -12,7 +12,7 @@ from .errors import SessionNotInitializedError
 
 CoordSpace = Literal["screen", "viewport"]
 CaptureMode = Literal["full_screen", "window", "region"]
-AdapterKind = Literal["qt", "klogg"] | None
+AdapterKind = Literal["qt", "cilogg"] | None
 
 
 @dataclass

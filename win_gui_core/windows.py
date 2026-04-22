@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import ctypes
 import re
 import time
 from dataclasses import dataclass
@@ -115,14 +116,88 @@ class WindowManager:
     def is_window(hwnd: int | None) -> bool:
         return bool(hwnd) and bool(win32gui.IsWindow(hwnd))
 
-    def focus_window(self, hwnd: int) -> dict[str, Any]:
+    @staticmethod
+    def _window_thread_id(hwnd: int | None) -> int:
+        if not hwnd:
+            return 0
+        thread_id, _pid = win32process.GetWindowThreadProcessId(hwnd)
+        return int(thread_id)
+
+    def _force_focus_window(self, hwnd: int) -> None:
+        user32 = ctypes.windll.user32
+        kernel32 = ctypes.windll.kernel32
+
+        current_thread = int(kernel32.GetCurrentThreadId())
+        foreground_hwnd = win32gui.GetForegroundWindow()
+        thread_ids = {
+            self._window_thread_id(foreground_hwnd),
+            self._window_thread_id(hwnd),
+        }
+        attached: list[int] = []
+
+        for thread_id in thread_ids:
+            if thread_id and thread_id != current_thread:
+                if user32.AttachThreadInput(current_thread, thread_id, True):
+                    attached.append(thread_id)
+
         try:
             if win32gui.IsIconic(hwnd):
                 win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)
+            else:
+                win32gui.ShowWindow(hwnd, win32con.SW_SHOW)
+
+            win32gui.BringWindowToTop(hwnd)
+            win32gui.SetWindowPos(
+                hwnd,
+                win32con.HWND_TOPMOST,
+                0,
+                0,
+                0,
+                0,
+                win32con.SWP_NOMOVE | win32con.SWP_NOSIZE,
+            )
+            win32gui.SetWindowPos(
+                hwnd,
+                win32con.HWND_NOTOPMOST,
+                0,
+                0,
+                0,
+                0,
+                win32con.SWP_NOMOVE | win32con.SWP_NOSIZE,
+            )
+            user32.SetForegroundWindow(hwnd)
+            user32.SetFocus(hwnd)
+            user32.SetActiveWindow(hwnd)
+        finally:
+            for thread_id in attached:
+                user32.AttachThreadInput(current_thread, thread_id, False)
+
+    def focus_window(self, hwnd: int) -> dict[str, Any]:
+        if not self.is_window(hwnd):
+            raise FocusError(f"Unable to focus hwnd {hwnd}: window does not exist")
+
+        last_error: Exception | None = None
+        try:
+            if win32gui.IsIconic(hwnd):
+                win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)
+            else:
+                win32gui.ShowWindow(hwnd, win32con.SW_SHOW)
+            win32gui.BringWindowToTop(hwnd)
             win32gui.SetForegroundWindow(hwnd)
+            return {"ok": True, "hwnd": hwnd}
         except Exception as exc:
-            raise FocusError(f"Unable to focus hwnd {hwnd}: {exc}") from exc
-        return {"ok": True, "hwnd": hwnd}
+            last_error = exc
+
+        try:
+            self._force_focus_window(hwnd)
+            return {"ok": True, "hwnd": hwnd}
+        except Exception as exc:
+            last_error = exc
+
+        if win32gui.IsWindowVisible(hwnd):
+            return {"ok": True, "hwnd": hwnd, "warning": f"foreground activation fallback failed: {last_error}"}
+
+        raise FocusError(f"Unable to focus hwnd {hwnd}: {last_error}") from last_error
 
     def restore_window(self, hwnd: int) -> dict[str, Any]:
         try:
